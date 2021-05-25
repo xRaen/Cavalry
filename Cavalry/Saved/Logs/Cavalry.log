@@ -788,3 +788,5 @@ LogConfig: Setting CVar [[r.setres:1280x720]]
 [2021.05.25-01.01.12:593][644]Cmd: SELECT NONE
 [2021.05.25-01.01.13:020][693]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (Sky Sphere)
 [2021.05.25-01.01.13:541][752]Cmd: SELECT NONE
+[2021.05.25-01.03.46:299][ 78]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
+[2021.05.25-01.03.46:617][106]Cmd: SELECT NONE
