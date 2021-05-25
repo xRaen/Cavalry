@@ -790,3 +790,57 @@ LogConfig: Setting CVar [[r.setres:1280x720]]
 [2021.05.25-01.01.13:541][752]Cmd: SELECT NONE
 [2021.05.25-01.03.46:299][ 78]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
 [2021.05.25-01.03.46:617][106]Cmd: SELECT NONE
+[2021.05.25-01.04.27:333][351]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
+[2021.05.25-01.04.27:865][412]Cmd: SELECT NONE
+[2021.05.25-01.05.03:957][692]LogContentBrowser: Deferred new asset folder creation: NewFolder
+[2021.05.25-01.05.03:965][692]LogContentBrowser: Creating deferred item: NewFolder
+[2021.05.25-01.05.03:966][692]LogSlate: Took 0.000126 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2021.05.25-01.05.05:974][932]LogContentBrowser: Attempting asset rename: NewFolder -> Blueprints
+[2021.05.25-01.05.06:106][932]LogContentBrowser: End creating deferred item NewFolder
+[2021.05.25-01.05.08:780][244]LogContentBrowser: Deferred new asset folder creation: NewFolder
+[2021.05.25-01.05.08:791][244]LogContentBrowser: Creating deferred item: NewFolder
+[2021.05.25-01.05.10:392][437]LogContentBrowser: Attempting asset rename: NewFolder -> Meshes
+[2021.05.25-01.05.10:525][437]LogContentBrowser: End creating deferred item NewFolder
+[2021.05.25-01.05.12:632][685]LogContentBrowser: Deferred new asset folder creation: NewFolder
+[2021.05.25-01.05.12:643][685]LogContentBrowser: Creating deferred item: NewFolder
+[2021.05.25-01.05.14:121][863]LogContentBrowser: Attempting asset rename: NewFolder -> Materials
+[2021.05.25-01.05.14:252][863]LogContentBrowser: End creating deferred item NewFolder
+[2021.05.25-01.05.21:292][701]LogContentBrowser: Deferred new asset folder creation: NewFolder
+[2021.05.25-01.05.21:298][701]LogContentBrowser: Creating deferred item: NewFolder
+[2021.05.25-01.05.23:725][993]LogContentBrowser: Attempting asset rename: NewFolder -> Levels
+[2021.05.25-01.05.23:856][993]LogContentBrowser: End creating deferred item NewFolder
+[2021.05.25-01.05.28:605][562]LogContentBrowser: Attempting asset rename: Levels -> Levels
+[2021.05.25-01.05.32:946][ 75]LogContentBrowser: Deferred new asset file creation: NewWorld
+[2021.05.25-01.05.32:957][ 75]LogContentBrowser: Creating deferred item: NewWorld
+[2021.05.25-01.05.47:551][826]LogContentBrowser: Attempting asset rename: NewWorld -> Brandons_Sandbox
+[2021.05.25-01.05.47:567][826]LogContentBrowser: End creating deferred item NewWorld
+[2021.05.25-01.05.50:436][167]LogUObjectHash: Compacting FUObjectHashTables data took   0.56ms
+[2021.05.25-01.05.51:891][167]LogSlate: Window 'Save Content' being destroyed
+[2021.05.25-01.05.51:906][167]LogSlate: Took 0.000085 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2021.05.25-01.05.51:918][167]LogAssetEditorSubsystem: Opening Asset editor for World /Game/Levels/Brandons_Sandbox.Brandons_Sandbox
+[2021.05.25-01.05.51:919][167]Cmd: MAP LOAD FILE="H:/Fall2021/Cavalry/Cavalry/Content/Levels/Brandons_Sandbox.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2021.05.25-01.05.51:919][167]LightingResults: New page: Lighting Build
+[2021.05.25-01.05.51:919][167]LoadErrors: New page: Loading map: Brandons_Sandbox.umap
+[2021.05.25-01.05.51:919][167]LogWorld: UWorld::CleanupWorld for Untitled_1, bSessionEnded=true, bCleanupResources=true
+[2021.05.25-01.05.51:920][167]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.05.25-01.05.51:920][167]MapCheck: New page: Map Check
+[2021.05.25-01.05.51:920][167]LightingResults: New page: Lighting Build
+[2021.05.25-01.05.51:923][167]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2021.05.25-01.05.51:924][167]LogUObjectHash: Compacting FUObjectHashTables data took   0.53ms
+[2021.05.25-01.05.51:924][167]LogAudio: Display: Audio Device (ID: 1) registered with world 'Brandons_Sandbox'.
+[2021.05.25-01.05.51:925][167]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2021.05.25-01.05.51:925][167]LogAIModule: Creating AISystem for world Brandons_Sandbox
+[2021.05.25-01.05.51:928][167]LogUObjectHash: Compacting FUObjectHashTables data took   0.45ms
+[2021.05.25-01.05.52:203][167]Cmd: MAP CHECKDEP NOCLEARLOG
+[2021.05.25-01.05.52:204][167]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0.803ms to complete.
+[2021.05.25-01.05.52:204][167]LogFileHelpers: Loading map 'Brandons_Sandbox' took 0.285
+[2021.05.25-01.05.54:737][465]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Levels/Brandons_Sandbox" FILE="H:/Fall2021/Cavalry/Cavalry/Content/Levels/Brandons_Sandbox.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2021.05.25-01.05.54:741][465]LogUObjectHash: Compacting FUObjectHashTables data took   0.21ms
+[2021.05.25-01.05.54:752][465]LogSavePackage: Moving 'H:/Fall2021/Cavalry/Cavalry/Saved/Brandons_SandboxDD4E06D144A40F67EB403C8F758BF650.tmp' to 'H:/Fall2021/Cavalry/Cavalry/Content/Levels/Brandons_Sandbox.umap'
+[2021.05.25-01.05.54:912][465]AssetCheck: New page: Asset Save: Brandons_Sandbox
+[2021.05.25-01.05.54:912][465]LogContentValidation: Display: Validating World /Game/Levels/Brandons_Sandbox.Brandons_Sandbox
+[2021.05.25-01.05.59:069][930]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Levels/Brandons_Sandbox" FILE="H:/Fall2021/Cavalry/Cavalry/Content/Levels/Brandons_Sandbox.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2021.05.25-01.05.59:071][930]LogUObjectHash: Compacting FUObjectHashTables data took   0.21ms
+[2021.05.25-01.05.59:081][930]LogSavePackage: Moving 'H:/Fall2021/Cavalry/Cavalry/Saved/Brandons_SandboxEC54763E46B8A368CC1EDCB7B339F719.tmp' to 'H:/Fall2021/Cavalry/Cavalry/Content/Levels/Brandons_Sandbox.umap'
+[2021.05.25-01.05.59:105][930]AssetCheck: New page: Asset Save: Brandons_Sandbox
+[2021.05.25-01.05.59:105][930]LogContentValidation: Display: Validating World /Game/Levels/Brandons_Sandbox.Brandons_Sandbox
