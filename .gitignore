@@ -73,7 +73,3 @@ Plugins/*/Intermediate/*
 DerivedDataCache/*
 
 # TEAM DEFINED IGNORES
-*.log
-Cavalry/Saved/Logs/
-
-Cavalry/Saved/
