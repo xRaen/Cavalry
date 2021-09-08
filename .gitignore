@@ -75,5 +75,5 @@ DerivedDataCache/*
 # TEAM DEFINED IGNORES
 *.log
 Cavalry/Saved/Logs/
-
+Saved/
 Cavalry/Saved/
