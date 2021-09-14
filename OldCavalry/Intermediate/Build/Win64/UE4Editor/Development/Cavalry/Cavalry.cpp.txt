@@ -1,2 +1,2 @@
-C:\Users\stevO\Documents\School\Cavalry\Cavalry\Cavalry\Intermediate\Build\Win64\UE4Editor\Development\Cavalry\Definitions.Cavalry.h
-C:\Users\stevO\Documents\School\Cavalry\Cavalry\Cavalry\Source\Cavalry\Cavalry.h
+I:\Fall2021\Cavalry\OldCavalry\Intermediate\Build\Win64\UE4Editor\Development\Cavalry\Definitions.Cavalry.h
+I:\Fall2021\Cavalry\OldCavalry\Source\Cavalry\Cavalry.h
