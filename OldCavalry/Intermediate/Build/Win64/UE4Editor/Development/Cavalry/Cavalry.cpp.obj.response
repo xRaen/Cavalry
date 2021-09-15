@@ -31,7 +31,7 @@
 /wd4244
 /wd4838
 /I .
-/I F:\Repositories\Cavalry\OldCavalry\Source
+/I I:\Fall2021\Cavalry\OldCavalry\Source
 /I Runtime
 /I Runtime\TraceLog\Public
 /I Runtime\Core\Public
@@ -260,12 +260,12 @@
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt"
-/FI"F:\Repositories\Cavalry\OldCavalry\Intermediate\Build\Win64\CavalryEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
-/Yu"F:\Repositories\Cavalry\OldCavalry\Intermediate\Build\Win64\CavalryEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
-/Fp"F:\Repositories\Cavalry\OldCavalry\Intermediate\Build\Win64\CavalryEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.pch"
-"F:\Repositories\Cavalry\OldCavalry\Source\Cavalry\Cavalry.cpp"
-/FI"F:\Repositories\Cavalry\OldCavalry\Intermediate\Build\Win64\UE4Editor\Development\Cavalry\Definitions.Cavalry.h"
-/Fo"F:\Repositories\Cavalry\OldCavalry\Intermediate\Build\Win64\UE4Editor\Development\Cavalry\Cavalry.cpp.obj"
+/FI"I:\Fall2021\Cavalry\OldCavalry\Intermediate\Build\Win64\CavalryEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
+/Yu"I:\Fall2021\Cavalry\OldCavalry\Intermediate\Build\Win64\CavalryEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
+/Fp"I:\Fall2021\Cavalry\OldCavalry\Intermediate\Build\Win64\CavalryEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.pch"
+"I:\Fall2021\Cavalry\OldCavalry\Source\Cavalry\Cavalry.cpp"
+/FI"I:\Fall2021\Cavalry\OldCavalry\Intermediate\Build\Win64\UE4Editor\Development\Cavalry\Definitions.Cavalry.h"
+/Fo"I:\Fall2021\Cavalry\OldCavalry\Intermediate\Build\Win64\UE4Editor\Development\Cavalry\Cavalry.cpp.obj"
 /TP
 /GR-
 /W4
