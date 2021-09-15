@@ -77,3 +77,6 @@ DerivedDataCache/*
 Cavalry/Saved/Logs/
 Saved/
 Cavalry/Saved/
+CavalryProject/Intermediate/CachedAssetRegistry.bin
+
+CavalryProject/Intermediate/ReimportCache/
