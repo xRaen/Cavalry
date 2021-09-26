@@ -1,0 +1,4 @@
+Find the location where you installed Unreal Engine 4.26.2
+Go to Engine then Plugins
+Copy the ENTIRE Wwise folder into the Plugins folder
+You have completed the installation
