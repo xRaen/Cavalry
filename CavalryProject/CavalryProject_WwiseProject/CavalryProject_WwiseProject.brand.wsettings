@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="UserProjectSettings" SchemaVersion="103">
 	<UserProjectSettingsInfo>
-		<UserProjectSettings Name="" ID="{F7339EBC-F152-4142-B613-0ACC6D88BC0C}">
+		<UserProjectSettings Name="" ID="{A78ECF27-6DB5-43A4-A5CE-D554C0AB32FC}">
 			<PropertyList>
 				<Property Name="EventView\FilterMode1" Type="int32" Value="2"/>
 				<Property Name="ExternalSourcesInputPath" Type="string">
