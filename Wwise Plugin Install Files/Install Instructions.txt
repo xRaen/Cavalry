@@ -1,0 +1,11 @@
+BEFORE INSTALLING THIS, UNDERSTAND ONE THING:
+If you install this, its going to be installed for every UE4.26 project you have. 
+If you don't want this, your only alternative is to make a separate install of 4.26 that you use for Cavalry or those other projects
+This isn't going to damage or bloat your projects, it's just something that I think is worth knowing before installing
+
+
+INSTRUCTIONS
+Find the location where you installed Unreal Engine 4.26.2
+Go to Engine then Plugins
+Copy the ENTIRE Wwise folder into the Plugins folder
+You have completed the installation
