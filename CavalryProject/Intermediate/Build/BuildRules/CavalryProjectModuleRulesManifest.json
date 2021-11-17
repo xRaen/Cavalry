@@ -1,0 +1,8 @@
+{
+	"SourceFiles": [
+		"C:\\Users\\Cavalry\\Documents\\Cavalry\\CavalryProject\\Plugins\\KatDataPlugin4BP\\Source\\KatDataPlugin4BP\\KatDataPlugin4BP.Build.cs",
+		"C:\\Users\\Cavalry\\Documents\\Cavalry\\CavalryProject\\Intermediate\\Source\\CavalryProject.Build.cs",
+		"C:\\Users\\Cavalry\\Documents\\Cavalry\\CavalryProject\\Intermediate\\Source\\CavalryProject.Target.cs"
+	],
+	"EngineVersion": "4.26.2"
+}
