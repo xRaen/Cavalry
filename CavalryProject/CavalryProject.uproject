@@ -5,16 +5,21 @@
 	"Description": "",
 	"Plugins": [
 		{
-			"Name": "CascadeToNiagaraConverter",
-			"Enabled": true
-		},
-		{
 			"Name": "NiagaraExtras",
 			"Enabled": true
 		},
 		{
 			"Name": "KatDataPlugin4BP",
 			"Enabled": true
+		},
+		{
+			"Name": "MegascansPlugin",
+			"Enabled": false,
+			"SupportedTargetPlatforms": [
+				"Win64",
+				"Mac",
+				"Linux"
+			]
 		}
 	],
 	"TargetPlatforms": [
