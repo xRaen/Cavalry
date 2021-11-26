@@ -1,6 +1,49 @@
 {
 	"Contents": [
 		{
+			"File": "../../../Engine/Plugins/FX/NiagaraExtras/NiagaraExtras.uplugin",
+			"Descriptor": 
+			{
+				"FileVersion": 3,
+				"Version": 1,
+				"VersionName": "1.0",
+				"FriendlyName": "Niagara Extras",
+				"Description": "Additional content that is too experimental/unproductized/special purpose for the official Niagara plugin.",
+				"Category": "FX",
+				"CreatedBy": "Epic Games, Inc.",
+				"CreatedByURL": "http://epicgames.com",
+				"DocsURL": "",
+				"MarketplaceURL": "",
+				"SupportURL": "",
+				"CanContainContent": true
+			}
+		},
+		{
+			"File": "../../../CavalryProject/Plugins/KatDataPlugin4BP/KatDataPlugin4BP.uplugin",
+			"Descriptor": 
+			{
+				"FileVersion": 3,
+				"Version": 3,
+				"VersionName": "3.0",
+				"FriendlyName": "KatDataPlugin",
+				"Description": "Get Kat Data",
+				"Category": "KatWalk",
+				"CreatedBy": "",
+				"CreatedByURL": "",
+				"DocsURL": "",
+				"MarketplaceURL": "",
+				"SupportURL": "",
+				"CanContainContent": true,
+				"Modules": [
+					{
+						"Name": "KatDataPlugin4BP",
+						"Type": "Runtime",
+						"LoadingPhase": "PreLoadingScreen"
+					}
+				]
+			}
+		},
+		{
 			"File": "../../../Engine/Plugins/2D/Paper2D/Paper2D.uplugin",
 			"Descriptor": 
 			{
@@ -2928,90 +2971,6 @@
 							"Win64",
 							"Win32"
 						]
-					}
-				]
-			}
-		},
-		{
-			"File": "../../../Engine/Plugins/FX/CascadeToNiagaraConverter/CascadeToNiagaraConverter.uplugin",
-			"Descriptor": 
-			{
-				"FileVersion": 3,
-				"Version": 1,
-				"VersionName": "1.0",
-				"FriendlyName": "Cascade To Niagara Converter",
-				"Description": "Add support for scriptable conversion of Cascade Systems to Niagara Systems.",
-				"Category": "FX",
-				"CreatedBy": "Epic Games, Inc.",
-				"CreatedByURL": "http://epicgames.com",
-				"DocsURL": "",
-				"MarketplaceURL": "",
-				"SupportURL": "",
-				"EnabledByDefault": false,
-				"CanContainContent": true,
-				"IsBetaVersion": true,
-				"Modules": [
-					{
-						"Name": "CascadeToNiagaraConverter",
-						"Type": "Editor",
-						"LoadingPhase": "Default"
-					}
-				],
-				"Plugins": [
-					{
-						"Name": "Niagara",
-						"Enabled": true
-					},
-					{
-						"Name": "PythonScriptPlugin",
-						"Enabled": true
-					},
-					{
-						"Name": "EditorScriptingUtilities",
-						"Enabled": true
-					}
-				]
-			}
-		},
-		{
-			"File": "../../../Engine/Plugins/FX/NiagaraExtras/NiagaraExtras.uplugin",
-			"Descriptor": 
-			{
-				"FileVersion": 3,
-				"Version": 1,
-				"VersionName": "1.0",
-				"FriendlyName": "Niagara Extras",
-				"Description": "Additional content that is too experimental/unproductized/special purpose for the official Niagara plugin.",
-				"Category": "FX",
-				"CreatedBy": "Epic Games, Inc.",
-				"CreatedByURL": "http://epicgames.com",
-				"DocsURL": "",
-				"MarketplaceURL": "",
-				"SupportURL": "",
-				"CanContainContent": true
-			}
-		},
-		{
-			"File": "../../../CavalryProject/Plugins/KatDataPlugin4BP/KatDataPlugin4BP.uplugin",
-			"Descriptor": 
-			{
-				"FileVersion": 3,
-				"Version": 3,
-				"VersionName": "3.0",
-				"FriendlyName": "KatDataPlugin",
-				"Description": "Get Kat Data",
-				"Category": "KatWalk",
-				"CreatedBy": "",
-				"CreatedByURL": "",
-				"DocsURL": "",
-				"MarketplaceURL": "",
-				"SupportURL": "",
-				"CanContainContent": true,
-				"Modules": [
-					{
-						"Name": "KatDataPlugin4BP",
-						"Type": "Runtime",
-						"LoadingPhase": "PreLoadingScreen"
 					}
 				]
 			}
