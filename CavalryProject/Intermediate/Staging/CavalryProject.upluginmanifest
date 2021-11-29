@@ -1,171 +1,6 @@
 {
 	"Contents": [
 		{
-			"File": "../../../Engine/Plugins/FX/CascadeToNiagaraConverter/CascadeToNiagaraConverter.uplugin",
-			"Descriptor": 
-			{
-				"FileVersion": 3,
-				"Version": 1,
-				"VersionName": "1.0",
-				"FriendlyName": "Cascade To Niagara Converter",
-				"Description": "Add support for scriptable conversion of Cascade Systems to Niagara Systems.",
-				"Category": "FX",
-				"CreatedBy": "Epic Games, Inc.",
-				"CreatedByURL": "http://epicgames.com",
-				"DocsURL": "",
-				"MarketplaceURL": "",
-				"SupportURL": "",
-				"EnabledByDefault": false,
-				"CanContainContent": true,
-				"IsBetaVersion": true,
-				"Modules": [
-					{
-						"Name": "CascadeToNiagaraConverter",
-						"Type": "Editor",
-						"LoadingPhase": "Default"
-					}
-				],
-				"Plugins": [
-					{
-						"Name": "Niagara",
-						"Enabled": true
-					},
-					{
-						"Name": "PythonScriptPlugin",
-						"Enabled": true
-					},
-					{
-						"Name": "EditorScriptingUtilities",
-						"Enabled": true
-					}
-				]
-			}
-		},
-		{
-			"File": "../../../Engine/Plugins/FX/Niagara/Niagara.uplugin",
-			"Descriptor": 
-			{
-				"FileVersion": 3,
-				"Version": 1,
-				"VersionName": "1.0",
-				"FriendlyName": "Niagara",
-				"Description": "Niagara effect systems.",
-				"Category": "FX",
-				"CreatedBy": "Epic Games, Inc.",
-				"CreatedByURL": "http://epicgames.com",
-				"DocsURL": "",
-				"MarketplaceURL": "",
-				"SupportURL": "",
-				"EnabledByDefault": false,
-				"CanContainContent": true,
-				"Modules": [
-					{
-						"Name": "NiagaraCore",
-						"Type": "Runtime",
-						"LoadingPhase": "PreDefault"
-					},
-					{
-						"Name": "Niagara",
-						"Type": "Runtime",
-						"LoadingPhase": "PreDefault"
-					},
-					{
-						"Name": "NiagaraAnimNotifies",
-						"Type": "Runtime",
-						"LoadingPhase": "PreDefault"
-					},
-					{
-						"Name": "NiagaraShader",
-						"Type": "Runtime",
-						"LoadingPhase": "PostConfigInit"
-					},
-					{
-						"Name": "NiagaraVertexFactories",
-						"Type": "Runtime",
-						"LoadingPhase": "PostConfigInit"
-					},
-					{
-						"Name": "NiagaraEditor",
-						"Type": "Editor",
-						"LoadingPhase": "Default"
-					},
-					{
-						"Name": "NiagaraEditorWidgets",
-						"Type": "Editor",
-						"LoadingPhase": "Default"
-					}
-				]
-			}
-		},
-		{
-			"File": "../../../Engine/Plugins/Experimental/PythonScriptPlugin/PythonScriptPlugin.uplugin",
-			"Descriptor": 
-			{
-				"FileVersion": 3,
-				"Version": 1,
-				"VersionName": "1.0",
-				"FriendlyName": "Python Editor Script Plugin",
-				"Description": "Python integration for the UE4 editor.",
-				"Category": "Scripting",
-				"CreatedBy": "Epic Games, Inc.",
-				"CreatedByURL": "http://epicgames.com",
-				"DocsURL": "https://docs.unrealengine.com/en-US/Engine/Editor/ScriptingAndAutomation/Python/index.html",
-				"MarketplaceURL": "",
-				"SupportURL": "https://forums.unrealengine.com/",
-				"EnabledByDefault": false,
-				"CanContainContent": true,
-				"IsBetaVersion": true,
-				"Modules": [
-					{
-						"Name": "PythonScriptPluginPreload",
-						"Type": "Runtime",
-						"LoadingPhase": "EarliestPossible"
-					},
-					{
-						"Name": "PythonScriptPlugin",
-						"Type": "UncookedOnly",
-						"LoadingPhase": "PreDefault"
-					}
-				],
-				"Plugins": [
-					{
-						"Name": "ContentBrowserFileDataSource",
-						"Enabled": true,
-						"WhitelistTargets": [
-							"Editor"
-						]
-					}
-				]
-			}
-		},
-		{
-			"File": "../../../Engine/Plugins/Editor/EditorScriptingUtilities/EditorScriptingUtilities.uplugin",
-			"Descriptor": 
-			{
-				"FileVersion": 3,
-				"Version": 1,
-				"VersionName": "1.0",
-				"FriendlyName": "Editor Scripting Utilities",
-				"Description": "Helper functions to script your own UE4 editor functionalities with Blueprint or other scripting tools.",
-				"Category": "Scripting",
-				"CreatedBy": "Epic Games, Inc.",
-				"CreatedByURL": "http://epicgames.com",
-				"DocsURL": "",
-				"MarketplaceURL": "",
-				"SupportURL": "",
-				"EnabledByDefault": false,
-				"CanContainContent": false,
-				"IsBetaVersion": true,
-				"Modules": [
-					{
-						"Name": "EditorScriptingUtilities",
-						"Type": "Editor",
-						"LoadingPhase": "Default"
-					}
-				]
-			}
-		},
-		{
 			"File": "../../../Engine/Plugins/FX/NiagaraExtras/NiagaraExtras.uplugin",
 			"Descriptor": 
 			{
@@ -1219,6 +1054,62 @@
 					{
 						"Name": "ChaosSolverPlugin",
 						"Enabled": true
+					}
+				]
+			}
+		},
+		{
+			"File": "../../../Engine/Plugins/FX/Niagara/Niagara.uplugin",
+			"Descriptor": 
+			{
+				"FileVersion": 3,
+				"Version": 1,
+				"VersionName": "1.0",
+				"FriendlyName": "Niagara",
+				"Description": "Niagara effect systems.",
+				"Category": "FX",
+				"CreatedBy": "Epic Games, Inc.",
+				"CreatedByURL": "http://epicgames.com",
+				"DocsURL": "",
+				"MarketplaceURL": "",
+				"SupportURL": "",
+				"EnabledByDefault": false,
+				"CanContainContent": true,
+				"Modules": [
+					{
+						"Name": "NiagaraCore",
+						"Type": "Runtime",
+						"LoadingPhase": "PreDefault"
+					},
+					{
+						"Name": "Niagara",
+						"Type": "Runtime",
+						"LoadingPhase": "PreDefault"
+					},
+					{
+						"Name": "NiagaraAnimNotifies",
+						"Type": "Runtime",
+						"LoadingPhase": "PreDefault"
+					},
+					{
+						"Name": "NiagaraShader",
+						"Type": "Runtime",
+						"LoadingPhase": "PostConfigInit"
+					},
+					{
+						"Name": "NiagaraVertexFactories",
+						"Type": "Runtime",
+						"LoadingPhase": "PostConfigInit"
+					},
+					{
+						"Name": "NiagaraEditor",
+						"Type": "Editor",
+						"LoadingPhase": "Default"
+					},
+					{
+						"Name": "NiagaraEditorWidgets",
+						"Type": "Editor",
+						"LoadingPhase": "Default"
 					}
 				]
 			}
