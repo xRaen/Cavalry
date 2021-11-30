@@ -34,14 +34,14 @@
 #define WITH_PUSH_MODEL 0
 #define WITH_CEF3 1
 #define WITH_LIVE_CODING 1
-#define UE_LIVE_CODING_ENGINE_DIR "D:\\UE4p\\UE_4.26\\Engine"
-#define UE_LIVE_CODING_PROJECT "D:\\UE4p\\zhuanyi426\\zhuanyi426.uproject"
+#define UE_LIVE_CODING_ENGINE_DIR "C:\\Program Files\\Epic Games\\UE_4.26\\Engine"
+#define UE_LIVE_CODING_PROJECT "G:\\Fall2021\\Cavalry\\CavalryProject\\CavalryProject.uproject"
 #define UBT_MODULE_MANIFEST "UE4.modules"
 #define UBT_MODULE_MANIFEST_DEBUGGAME "UE4-Win64-DebugGame.modules"
 #define UBT_COMPILED_PLATFORM Win64
 #define UBT_COMPILED_TARGET Game
 #define UE_APP_NAME "UE4"
-#define UE_ENGINE_DIRECTORY "../../../UE_4.26/Engine/"
+#define UE_ENGINE_DIRECTORY "C:/Program Files/Epic Games/UE_4.26/Engine/"
 #define NDIS_MINIPORT_MAJOR_VERSION 0
 #define WIN32 1
 #define _WIN32_WINNT 0x0601
@@ -53,8 +53,8 @@
 #define NDEBUG 1
 #define UE_BUILD_DEVELOPMENT 1
 #define UE_IS_ENGINE_MODULE 0
-#define UE_PROJECT_NAME zhuanyi426
-#define UE_TARGET_NAME zhuanyi426
+#define UE_PROJECT_NAME CavalryProject
+#define UE_TARGET_NAME CavalryProject
 #define IMPLEMENT_ENCRYPTION_KEY_REGISTRATION() 
 #define IMPLEMENT_SIGNING_KEY_REGISTRATION() 
 #define DEPRECATED_FORGAME DEPRECATED
