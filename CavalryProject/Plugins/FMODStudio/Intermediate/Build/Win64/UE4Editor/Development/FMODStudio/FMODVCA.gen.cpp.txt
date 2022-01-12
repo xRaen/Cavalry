@@ -1,7 +1,0 @@
-C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\CoreUObject\Public\UObject/GeneratedCppIncludes.h
-C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h
-C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\CoreUObject\Public\UObject/TextProperty.h
-C:\Users\Cavalry\Documents\Repository\Cavalry\CavalryProject\Plugins\FMODStudio\Source\FMODStudio/Classes/FMODVCA.h
-C:\Users\Cavalry\Documents\Repository\Cavalry\CavalryProject\Plugins\FMODStudio\Source\FMODStudio\Classes\FMODAsset.h
-C:\Users\Cavalry\Documents\Repository\Cavalry\CavalryProject\Plugins\FMODStudio\Intermediate\Build\Win64\UE4Editor\Inc\FMODStudio\FMODAsset.generated.h
-C:\Users\Cavalry\Documents\Repository\Cavalry\CavalryProject\Plugins\FMODStudio\Intermediate\Build\Win64\UE4Editor\Inc\FMODStudio\FMODVCA.generated.h
