@@ -1,5 +1,0 @@
-C:\Users\Cavalry\Documents\Repository\Cavalry\CavalryProject\Plugins\FMODStudio\Source\FMODStudioEditor\Private\FMODBankUpdateNotifier.h
-C:\Users\Cavalry\Documents\Repository\Cavalry\CavalryProject\Plugins\FMODStudio\Source\FMODStudio\Classes\FMODSettings.h
-C:\Users\Cavalry\Documents\Repository\Cavalry\CavalryProject\Plugins\FMODStudio\Intermediate\Build\Win64\UE4Editor\Inc\FMODStudio\FMODSettings.generated.h
-C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Core\Public\HAL/FileManager.h
-C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Core\Public\GenericPlatform/GenericPlatformFile.h
