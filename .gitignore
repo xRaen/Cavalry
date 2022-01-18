@@ -77,6 +77,7 @@ DerivedDataCache/*
 Cavalry/Saved/Logs/
 Saved/
 Cavalry/Saved/
+CavalryProject/Plugins/KatDataPlugin4BP
 CavalryProject/Intermediate/CachedAssetRegistry.bin
 
 CavalryProject/Intermediate/ReimportCache/
@@ -86,3 +87,13 @@ CavalryProject/Intermediate/AssetRegistryCache/284a07a7.bin
 CavalryProject/Intermediate/AssetRegistryCache/bf514883.bin
 
 CavalryProject/Intermediate/AssetRegistryCache/572950d9.bin
+
+CavalryProject/Intermediate/AssetRegistryCache/084c8cca.bin
+
+CavalryProject/Intermediate/AssetRegistryCache/108ad57a.bin
+
+CavalryProject/Binaries/
+
+CavalryProject/Intermediate/Build/
+
+CavalryProject/Plugins/FMODStudio/
