@@ -1,6 +1,6 @@
 //Maya ASCII 2022 scene
 //Name: SideNetting.ma
-//Last modified: Sun, Feb 06, 2022 01:07:16 PM
+//Last modified: Sun, Feb 06, 2022 01:54:52 PM
 //Codeset: 1252
 requires maya "2022";
 requires -nodeType "gameFbxExporter" "gameFbxExporter" "1.0";
@@ -11,11 +11,11 @@ fileInfo "product" "Maya 2022";
 fileInfo "version" "2022";
 fileInfo "cutIdentifier" "202102181415-29bfc1879c";
 fileInfo "osv" "Windows 10 Home v2009 (Build: 19043)";
-fileInfo "UUID" "85BF6DF2-4D34-4633-10DB-65A0F223F2FE";
+fileInfo "UUID" "93658E22-4586-3DED-3F13-B0BD00550992";
 createNode transform -s -n "persp";
 	rename -uid "D45E5855-483C-D017-0197-C884577BB068";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 12.309916553799862 5.3235430296476869 3.3853264552129723 ;
+	setAttr ".t" -type "double3" 12.998174825117758 5.6612194049592937 3.6169509539009166 ;
 	setAttr ".r" -type "double3" -24.938352716659203 2231.3999999998027 4.985831403432668e-15 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "771AF226-4E87-901B-6D5F-62A647E21E6B";
@@ -24,7 +24,7 @@ createNode camera -s -n "perspShape" -p "persp";
 	setAttr ".ncp" 0.001;
 	setAttr ".fcp" 100;
 	setAttr ".fd" 0.05;
-	setAttr ".coi" 14.274500331298242;
+	setAttr ".coi" 15.07535905221819;
 	setAttr ".ow" 0.1;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
@@ -579,22 +579,22 @@ createNode mesh -n "SupportArm_Geo1Shape" -p "SupportArm_Geo1";
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 	setAttr ".ai_translator" -type "string" "polymesh";
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "0EEF2300-4B98-B641-AFEE-1189D42D3D21";
+	rename -uid "CB503A19-421C-C9B6-4B39-BFBB095FF60A";
 	setAttr -s 4 ".lnk";
 	setAttr -s 4 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "92ACFE14-4907-744B-709A-58B0953186E2";
+	rename -uid "DC3ADA20-427F-88F3-E36F-18828651398D";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "2EDB505F-45CE-7869-8332-15BE5274EAF2";
+	rename -uid "7FD2EA12-4A9C-B271-95BF-28B81E9FD91A";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "D293DFBC-4EC2-D611-530E-ECA9C4D48C07";
+	rename -uid "3286A781-47BC-50C3-9ACD-79B3FA6F3B3F";
 	setAttr ".cdl" 1;
 	setAttr -s 2 ".dli[1]"  1;
 	setAttr -s 2 ".dli";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "FDEAA6F2-402B-DCFC-9006-0B8F8283E32C";
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "E68273D4-41FC-B401-0415-AB8C326AE738";
+	rename -uid "44ADFD00-44CD-546E-1B18-16B0D153DEAE";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "D730E05E-4B51-7548-E482-64B3AFE1FF86";
 	setAttr ".g" yes;
@@ -681,6 +681,7 @@ createNode gameFbxExporter -n "gameExporterPreset1";
 	setAttr ".pn" -type "string" "Model Default";
 	setAttr ".ils" yes;
 	setAttr ".ilu" yes;
+	setAttr ".esi" 2;
 	setAttr ".ebm" yes;
 	setAttr ".inc" yes;
 	setAttr ".fv" -type "string" "FBX201800";
