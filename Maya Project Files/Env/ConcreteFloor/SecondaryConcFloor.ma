@@ -1,6 +1,6 @@
 //Maya ASCII 2022 scene
 //Name: SecondaryConcFloor.ma
-//Last modified: Thu, Feb 10, 2022 06:01:09 PM
+//Last modified: Thu, Feb 10, 2022 06:24:25 PM
 //Codeset: 1252
 requires maya "2022";
 requires -nodeType "gameFbxExporter" "gameFbxExporter" "1.0";
@@ -11,12 +11,12 @@ fileInfo "product" "Maya 2022";
 fileInfo "version" "2022";
 fileInfo "cutIdentifier" "202102181415-29bfc1879c";
 fileInfo "osv" "Windows 10 Home v2009 (Build: 19043)";
-fileInfo "UUID" "29A43C2D-44EE-8D22-EC1F-DD930C0C757F";
+fileInfo "UUID" "679D4337-42FD-9E8D-E5E9-B0AAE81FC040";
 createNode transform -s -n "persp";
 	rename -uid "ADE97CD5-4472-C96A-1D48-CBBC39B13532";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 9.9158822694781801 12.937200394419296 21.641460155941072 ;
-	setAttr ".r" -type "double3" -44.738352730574235 -318.60000000007494 -4.2401116451017622e-15 ;
+	setAttr ".t" -type "double3" 17.076303849038371 12.103864888134224 10.364626745203051 ;
+	setAttr ".r" -type "double3" -39.33835273057916 -271.80000000005992 -2.0251371025110186e-13 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "22E78C11-4732-0E40-6C9E-D08F1EA2DD7B";
 	setAttr -k off ".v" no;
@@ -24,7 +24,7 @@ createNode camera -s -n "perspShape" -p "persp";
 	setAttr ".ncp" 0.001;
 	setAttr ".fcp" 100;
 	setAttr ".fd" 0.05;
-	setAttr ".coi" 17.848641984220048;
+	setAttr ".coi" 18.622747779959195;
 	setAttr ".ow" 0.1;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
