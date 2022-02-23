@@ -1,6 +1,6 @@
 //Maya ASCII 2022 scene
 //Name: Security-LF_Skybridge_01.ma
-//Last modified: Wed, Feb 23, 2022 04:02:33 PM
+//Last modified: Wed, Feb 23, 2022 04:03:17 PM
 //Codeset: 1252
 requires maya "2022";
 requires "stereoCamera" "10.0";
@@ -14,12 +14,12 @@ fileInfo "product" "Maya 2022";
 fileInfo "version" "2022";
 fileInfo "cutIdentifier" "202102181415-29bfc1879c";
 fileInfo "osv" "Windows 10 Home v2009 (Build: 19043)";
-fileInfo "UUID" "DF068575-437E-1376-8E4F-B8A0FC37C002";
+fileInfo "UUID" "73494D00-4DA1-E152-59C6-7FB3FD689C1D";
 createNode transform -s -n "persp";
 	rename -uid "1B66D6D9-4F68-0F95-4416-61BDA7745F50";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -16.000711742765372 10.559132067211927 -27.397824261707093 ;
-	setAttr ".r" -type "double3" 341.06164813206306 22890.200000001383 0 ;
+	setAttr ".t" -type "double3" 25.069929900552616 1.3992344375250394 1.7280733572032878 ;
+	setAttr ".r" -type "double3" 349.46164813210754 23117.399999994886 -3.6450300497868237e-15 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "E71CA3C2-4D96-9208-64EC-8C895840F621";
 	setAttr -k off ".v" no;
@@ -27,7 +27,7 @@ createNode camera -s -n "perspShape" -p "persp";
 	setAttr ".ncp" 0.001;
 	setAttr ".fcp" 100;
 	setAttr ".fd" 0.05;
-	setAttr ".coi" 34.825909605187739;
+	setAttr ".coi" 10.985535220457386;
 	setAttr ".ow" 0.1;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
@@ -122,6 +122,7 @@ createNode mesh -n "SCALEShape" -p "SCALE";
 	setAttr ".gtag[4].gtagcmp" -type "componentList" 1 "f[4]";
 	setAttr ".gtag[5].gtagnm" -type "string" "top";
 	setAttr ".gtag[5].gtagcmp" -type "componentList" 1 "f[1]";
+	setAttr ".pv" -type "double2" 0.5 0.5 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr -s 14 ".uvst[0].uvsp[0:13]" -type "float2" 0.375 0 0.625 0 0.375
 		 0.25 0.625 0.25 0.375 0.5 0.625 0.5 0.375 0.75 0.625 0.75 0.375 1 0.625 1 0.875 0
@@ -166,7 +167,7 @@ createNode mesh -n "STICKShape" -p "STICK";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
-	setAttr ".pv" -type "double2" 0.5 0.875 ;
+	setAttr ".pv" -type "double2" 0.5 0.5 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr -s 14 ".uvst[0].uvsp[0:13]" -type "float2" 0.375 0 0.625 0 0.375
 		 0.25 0.625 0.25 0.375 0.5 0.625 0.5 0.375 0.75 0.625 0.75 0.375 1 0.625 1 0.875 0
@@ -1993,8 +1994,8 @@ createNode transform -n "SkybridgeMeshes";
 	setAttr ".sp" -type "double3" 0 1.945685806274414 -0.38230987548828127 ;
 createNode transform -n "gratedfloor" -p "SkybridgeMeshes";
 	rename -uid "DF0E1C0D-4B61-0855-243C-7590AD9C4958";
-	setAttr ".rp" -type "double3" 9.6500146484374998 0 0 ;
-	setAttr ".sp" -type "double3" 9.6500146484374998 0 0 ;
+	setAttr ".rp" -type "double3" 9.6500146484374998 0.012863870236853217 0 ;
+	setAttr ".sp" -type "double3" 9.6500146484374998 0.012863870236853217 0 ;
 createNode mesh -n "gratedfloorShape" -p "gratedfloor";
 	rename -uid "FE5D3CC8-4484-B418-3E3B-BBBA438F5A61";
 	setAttr -k off ".v";
@@ -2021,12 +2022,14 @@ createNode mesh -n "gratedfloorShape" -p "gratedfloor";
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
-	setAttr -s 27 ".pt[0:26]" -type "float3"  9.6500149 0 0 9.6500149 0 
-		0 9.6500149 0 0 9.6500149 0 0 9.6500149 0 0 9.6500149 0 0 9.6500149 0 0 9.6500149 
-		0 0 9.6500149 0 0 9.6500149 0 0 9.6500149 0 0 9.6500149 0 0 9.6500149 0 0 9.6500149 
-		0 0 9.6500149 0 0 9.6500149 0 0 9.6500149 0 0 9.6500149 0 0 9.6500149 0 0 9.6500149 
-		0 0 9.6500149 0 0 9.6500149 0 0 9.6500149 0 0 9.6500149 0 0 9.6500149 0 0 9.6500149 
-		0 0 9.6500149 0 0;
+	setAttr -s 27 ".pt[0:26]" -type "float3"  9.6500149 0.01286387 0 9.6500149 
+		0.01286387 0 9.6500149 0.01286387 0 9.6500149 0.01286387 0 9.6500149 0.01286387 0 
+		9.6500149 0.01286387 0 9.6500149 0.01286387 0 9.6500149 0.01286387 0 9.6500149 0.01286387 
+		0 9.6500149 0.01286387 0 9.6500149 0.01286387 0 9.6500149 0.01286387 0 9.6500149 
+		0.01286387 0 9.6500149 0.01286387 0 9.6500149 0.01286387 0 9.6500149 0.01286387 0 
+		9.6500149 0.01286387 0 9.6500149 0.01286387 0 9.6500149 0.01286387 0 9.6500149 0.01286387 
+		0 9.6500149 0.01286387 0 9.6500149 0.01286387 0 9.6500149 0.01286387 0 9.6500149 
+		0.01286387 0 9.6500149 0.01286387 0 9.6500149 0.01286387 0 9.6500149 0.01286387 0;
 	setAttr -s 27 ".vt[0:26]"  -9.65001488 2.0147827e-07 1.73666477 6.86294413 2.0147827e-07 1.73666477
 		 -9.65001488 -2.0147827e-07 -1.73666477 7.051013947 -2.0147827e-07 -1.73666477 -9.65001488 0 0
 		 7.051013947 0 0 2.82937622 2.0147827e-07 1.73666477 2.82937622 0 0 2.82937622 -2.0147827e-07 -1.73666477
@@ -2087,7 +2090,7 @@ createNode mesh -n "GratedSideShape" -p "GratedSide";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
-	setAttr ".pv" -type "double2" 0.625 0 ;
+	setAttr ".pv" -type "double2" 0.5 0.5 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr -s 202 ".uvst[0].uvsp[0:201]" -type "float2" 0.375 0 0.625 0 0.375
 		 0.25 0.625 0.25 0.375 0.5 0.625 0.5 0.375 0.75 0.625 0.75 0.375 1 0.625 1 0.875 0
@@ -2865,8 +2868,8 @@ createNode mesh -n "polySurfaceShape2" -p "CableSupport10";
 	setAttr ".ai_translator" -type "string" "polymesh";
 createNode transform -n "gratedfloorsmall1" -p "SkybridgeMeshes";
 	rename -uid "75D4DF72-4A6F-1B2B-0CD0-A593B33DB284";
-	setAttr ".rp" -type "double3" 9.6500146484374998 4.0507538489505439 2.1652095939130158e-07 ;
-	setAttr ".sp" -type "double3" 9.6500146484374998 4.0507538489505439 2.1652095939130158e-07 ;
+	setAttr ".rp" -type "double3" 9.6500146484374998 4.0621337248288061 2.1652095939130158e-07 ;
+	setAttr ".sp" -type "double3" 9.6500146484374998 4.0621337248288061 2.1652095939130158e-07 ;
 createNode mesh -n "gratedfloorsmall1Shape" -p "gratedfloorsmall1";
 	rename -uid "CD155E22-414A-D966-DAEC-EEAE90ADEDF8";
 	setAttr -k off ".v";
@@ -2881,13 +2884,13 @@ createNode mesh -n "gratedfloorsmall1Shape" -p "gratedfloorsmall1";
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
-	setAttr -s 16 ".pt[0:15]" -type "float3"  9.6500149 4.0507536 -1.6576504 
-		9.6500149 4.0507536 -1.6576504 9.6500149 4.0507536 1.6576511 9.6500149 4.0507536 
-		1.6576511 9.6500149 4.0507536 -1.6576504 9.6500149 4.0507536 1.6576511 9.6500149 
-		4.0507536 -1.6576504 9.6500149 4.0507536 1.6576511 9.6500149 4.0507536 -1.6576504 
-		9.6500149 4.0507536 1.6576511 9.6500149 4.0507536 -1.6576504 9.6500149 4.0507536 
-		1.6576511 9.6500149 4.0507536 -1.6576504 9.6500149 4.0507536 1.6576511 9.6500149 
-		4.0507536 -4.8330593 9.6500149 4.0507536 -4.8330593;
+	setAttr -s 16 ".pt[0:15]" -type "float3"  9.6500149 4.0621338 -1.6576504 
+		9.6500149 4.0621338 -1.6576504 9.6500149 4.0621338 1.6576511 9.6500149 4.0621338 
+		1.6576511 9.6500149 4.0621338 -1.6576504 9.6500149 4.0621338 1.6576511 9.6500149 
+		4.0621338 -1.6576504 9.6500149 4.0621338 1.6576511 9.6500149 4.0621338 -1.6576504 
+		9.6500149 4.0621338 1.6576511 9.6500149 4.0621338 -1.6576504 9.6500149 4.0621338 
+		1.6576511 9.6500149 4.0621338 -1.6576504 9.6500149 4.0621338 1.6576511 9.6500149 
+		4.0621338 -4.8330593 9.6500149 4.0621338 -4.8330593;
 	setAttr -s 16 ".vt[0:15]"  -9.65001488 0 0.61160237 5.94922352 0 0.61160237
 		 -9.65001488 0 -0.61160249 5.94922352 0 -0.61160249 -1.85039556 0 0.61160237 -1.85039556 0 -0.61160249
 		 -5.75020504 0 0.61160237 -5.75020504 0 -0.61160249 2.049414158 0 0.61160237 2.049414158 0 -0.61160249
@@ -2925,7 +2928,7 @@ createNode mesh -n "GratedSide1Shape" -p "GratedSide1";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
-	setAttr ".pv" -type "double2" 0.75 0.125 ;
+	setAttr ".pv" -type "double2" 0.5 0.5 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr -s 198 ".uvst[0].uvsp[0:197]" -type "float2" 0.375 0 0.625 0 0.375
 		 0.25 0.625 0.25 0.375 0.5 0.625 0.5 0.375 0.75 0.625 0.75 0.375 1 0.625 1 0.875 0
@@ -3563,7 +3566,7 @@ createNode mesh -n "GratedSide2Shape" -p "GratedSide2";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
-	setAttr ".pv" -type "double2" 0.87499997019767761 0.125 ;
+	setAttr ".pv" -type "double2" 0.5 0.5 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr -s 158 ".uvst[0].uvsp[0:157]" -type "float2" 0.375 0 0.625 0 0.375
 		 0.25 0.625 0.25 0.375 0.5 0.625 0.5 0.375 0.75 0.625 0.75 0.375 1 0.625 1 0.875 0
@@ -4101,7 +4104,7 @@ createNode mesh -n "CableSupport11Shape" -p "CableSupport11";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
-	setAttr ".pv" -type "double2" 0.5 0.375 ;
+	setAttr ".pv" -type "double2" 0.5 0.5 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr -s 46 ".uvst[0].uvsp[0:45]" -type "float2" 0.375 0 0.625 0 0.375
 		 0.25 0.625 0.25 0.375 0.5 0.625 0.5 0.375 0.75 0.625 0.75 0.375 1 0.625 1 0.875 0
@@ -4586,7 +4589,7 @@ createNode mesh -n "CableSupport13Shape" -p "CableSupport13";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
-	setAttr ".pv" -type "double2" 0.5 0.375 ;
+	setAttr ".pv" -type "double2" 0.5 0.5 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr -s 46 ".uvst[0].uvsp[0:45]" -type "float2" 0.375 0 0.625 0 0.375
 		 0.25 0.625 0.25 0.375 0.5 0.625 0.5 0.375 0.75 0.625 0.75 0.375 1 0.625 1 0.875 0
@@ -4828,7 +4831,7 @@ createNode mesh -n "CableSupport14Shape" -p "CableSupport14";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
-	setAttr ".pv" -type "double2" 0.5 0.375 ;
+	setAttr ".pv" -type "double2" 0.5 0.5 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr -s 46 ".uvst[0].uvsp[0:45]" -type "float2" 0.375 0 0.625 0 0.375
 		 0.25 0.625 0.25 0.375 0.5 0.625 0.5 0.375 0.75 0.625 0.75 0.375 1 0.625 1 0.875 0
@@ -5069,7 +5072,7 @@ createNode mesh -n "CableSupport15Shape" -p "CableSupport15";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
-	setAttr ".pv" -type "double2" 0.5 0.375 ;
+	setAttr ".pv" -type "double2" 0.5 0.5 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr -s 46 ".uvst[0].uvsp[0:45]" -type "float2" 0.375 0 0.625 0 0.375
 		 0.25 0.625 0.25 0.375 0.5 0.625 0.5 0.375 0.75 0.625 0.75 0.375 1 0.625 1 0.875 0
@@ -5311,7 +5314,7 @@ createNode mesh -n "CableSupport16Shape" -p "CableSupport16";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
-	setAttr ".pv" -type "double2" 0.5 0.375 ;
+	setAttr ".pv" -type "double2" 0.5 0.5 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr -s 46 ".uvst[0].uvsp[0:45]" -type "float2" 0.375 0 0.625 0 0.375
 		 0.25 0.625 0.25 0.375 0.5 0.625 0.5 0.375 0.75 0.625 0.75 0.375 1 0.625 1 0.875 0
@@ -5552,7 +5555,7 @@ createNode mesh -n "CableSupport17Shape" -p "CableSupport17";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
-	setAttr ".pv" -type "double2" 0.5 0.375 ;
+	setAttr ".pv" -type "double2" 0.5 0.5 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr -s 46 ".uvst[0].uvsp[0:45]" -type "float2" 0.375 0 0.625 0 0.375
 		 0.25 0.625 0.25 0.375 0.5 0.625 0.5 0.375 0.75 0.625 0.75 0.375 1 0.625 1 0.875 0
@@ -5794,7 +5797,7 @@ createNode mesh -n "CableSupport18Shape" -p "CableSupport18";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
-	setAttr ".pv" -type "double2" 0.5 0.375 ;
+	setAttr ".pv" -type "double2" 0.5 0.5 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr -s 46 ".uvst[0].uvsp[0:45]" -type "float2" 0.375 0 0.625 0 0.375
 		 0.25 0.625 0.25 0.375 0.5 0.625 0.5 0.375 0.75 0.625 0.75 0.375 1 0.625 1 0.875 0
@@ -6040,7 +6043,7 @@ createNode mesh -n "polySurfaceShape7" -p "|SkybridgeMeshes|XSupport|polySurface
 	setAttr ".iog[0].og[0].gcl" -type "componentList" 1 "f[0:19]";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
-	setAttr ".pv" -type "double2" 0.75 0.5 ;
+	setAttr ".pv" -type "double2" 0.5 0.375 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr -s 36 ".uvst[0].uvsp[0:35]" -type "float2" 0.375 0 0.625 0 0.625
 		 0.25 0.375 0.25 0.625 0.5 0.375 0.5 0.625 0.75 0.375 0.75 0.875 0 0.875 0.25 0.125
@@ -6128,7 +6131,7 @@ createNode mesh -n "polySurfaceShape6" -p "|SkybridgeMeshes|XSupport|polySurface
 	setAttr ".iog[0].og[0].gcl" -type "componentList" 1 "f[0:19]";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
-	setAttr ".pv" -type "double2" 0.75 0.375 ;
+	setAttr ".pv" -type "double2" 0.5 0.375 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr -s 36 ".uvst[0].uvsp[0:35]" -type "float2" 0.375 0 0.625 0 0.625
 		 0.25 0.375 0.25 0.625 0.5 0.375 0.5 0.625 0.75 0.375 0.75 0.875 0 0.875 0.25 0.125
@@ -6216,6 +6219,7 @@ createNode mesh -n "polySurfaceShape8" -p "|SkybridgeMeshes|XSupport|polySurface
 	setAttr ".iog[0].og[0].gcl" -type "componentList" 1 "f[0:15]";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
+	setAttr ".pv" -type "double2" 0.5 0.5 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr -s 27 ".uvst[0].uvsp[0:26]" -type "float2" 0.375 0 0.625 0 0.625
 		 0.25 0.375 0.25 0.625 0.5 0.375 0.5 0.625 0.75 0.375 0.75 0.625 1 0.375 1 0.875 0
@@ -6297,7 +6301,7 @@ createNode mesh -n "polySurfaceShape2" -p "|SkybridgeMeshes|XSupport1|polySurfac
 	setAttr ".iog[0].og[0].gcl" -type "componentList" 1 "f[0:19]";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
-	setAttr ".pv" -type "double2" 0.75 0.5 ;
+	setAttr ".pv" -type "double2" 0.5 0.375 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr -s 36 ".uvst[0].uvsp[0:35]" -type "float2" 0.375 0 0.625 0 0.625
 		 0.25 0.375 0.25 0.625 0.5 0.375 0.5 0.625 0.75 0.375 0.75 0.875 0 0.875 0.25 0.125
@@ -6385,7 +6389,7 @@ createNode mesh -n "polySurfaceShape1" -p "|SkybridgeMeshes|XSupport1|polySurfac
 	setAttr ".iog[0].og[0].gcl" -type "componentList" 1 "f[0:19]";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
-	setAttr ".pv" -type "double2" 0.75 0.375 ;
+	setAttr ".pv" -type "double2" 0.5 0.375 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr -s 36 ".uvst[0].uvsp[0:35]" -type "float2" 0.375 0 0.625 0 0.625
 		 0.25 0.375 0.25 0.625 0.5 0.375 0.5 0.625 0.75 0.375 0.75 0.875 0 0.875 0.25 0.125
@@ -6473,6 +6477,7 @@ createNode mesh -n "polySurfaceShape3" -p "|SkybridgeMeshes|XSupport1|polySurfac
 	setAttr ".iog[0].og[0].gcl" -type "componentList" 1 "f[0:15]";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
+	setAttr ".pv" -type "double2" 0.5 0.5 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr -s 27 ".uvst[0].uvsp[0:26]" -type "float2" 0.375 0 0.625 0 0.625
 		 0.25 0.375 0.25 0.625 0.5 0.375 0.5 0.625 0.75 0.375 0.75 0.625 1 0.375 1 0.875 0
@@ -6554,7 +6559,7 @@ createNode mesh -n "polySurfaceShape2" -p "|SkybridgeMeshes|XSupport2|polySurfac
 	setAttr ".iog[0].og[0].gcl" -type "componentList" 1 "f[0:19]";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
-	setAttr ".pv" -type "double2" 0.75 0.5 ;
+	setAttr ".pv" -type "double2" 0.5 0.375 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr -s 36 ".uvst[0].uvsp[0:35]" -type "float2" 0.375 0 0.625 0 0.625
 		 0.25 0.375 0.25 0.625 0.5 0.375 0.5 0.625 0.75 0.375 0.75 0.875 0 0.875 0.25 0.125
@@ -6642,7 +6647,7 @@ createNode mesh -n "polySurfaceShape1" -p "|SkybridgeMeshes|XSupport2|polySurfac
 	setAttr ".iog[0].og[0].gcl" -type "componentList" 1 "f[0:19]";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
-	setAttr ".pv" -type "double2" 0.75 0.375 ;
+	setAttr ".pv" -type "double2" 0.5 0.375 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr -s 36 ".uvst[0].uvsp[0:35]" -type "float2" 0.375 0 0.625 0 0.625
 		 0.25 0.375 0.25 0.625 0.5 0.375 0.5 0.625 0.75 0.375 0.75 0.875 0 0.875 0.25 0.125
@@ -6730,6 +6735,7 @@ createNode mesh -n "polySurfaceShape3" -p "|SkybridgeMeshes|XSupport2|polySurfac
 	setAttr ".iog[0].og[0].gcl" -type "componentList" 1 "f[0:15]";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
+	setAttr ".pv" -type "double2" 0.5 0.5 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr -s 27 ".uvst[0].uvsp[0:26]" -type "float2" 0.375 0 0.625 0 0.625
 		 0.25 0.375 0.25 0.625 0.5 0.375 0.5 0.625 0.75 0.375 0.75 0.625 1 0.375 1 0.875 0
@@ -6811,7 +6817,7 @@ createNode mesh -n "polySurfaceShape2" -p "|SkybridgeMeshes|XSupport3|polySurfac
 	setAttr ".iog[0].og[0].gcl" -type "componentList" 1 "f[0:19]";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
-	setAttr ".pv" -type "double2" 0.75 0.5 ;
+	setAttr ".pv" -type "double2" 0.5 0.375 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr -s 36 ".uvst[0].uvsp[0:35]" -type "float2" 0.375 0 0.625 0 0.625
 		 0.25 0.375 0.25 0.625 0.5 0.375 0.5 0.625 0.75 0.375 0.75 0.875 0 0.875 0.25 0.125
@@ -6899,7 +6905,7 @@ createNode mesh -n "polySurfaceShape1" -p "|SkybridgeMeshes|XSupport3|polySurfac
 	setAttr ".iog[0].og[0].gcl" -type "componentList" 1 "f[0:19]";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
-	setAttr ".pv" -type "double2" 0.75 0.375 ;
+	setAttr ".pv" -type "double2" 0.5 0.375 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr -s 36 ".uvst[0].uvsp[0:35]" -type "float2" 0.375 0 0.625 0 0.625
 		 0.25 0.375 0.25 0.625 0.5 0.375 0.5 0.625 0.75 0.375 0.75 0.875 0 0.875 0.25 0.125
@@ -6987,6 +6993,7 @@ createNode mesh -n "polySurfaceShape3" -p "|SkybridgeMeshes|XSupport3|polySurfac
 	setAttr ".iog[0].og[0].gcl" -type "componentList" 1 "f[0:15]";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
+	setAttr ".pv" -type "double2" 0.5 0.5 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr -s 27 ".uvst[0].uvsp[0:26]" -type "float2" 0.375 0 0.625 0 0.625
 		 0.25 0.375 0.25 0.625 0.5 0.375 0.5 0.625 0.75 0.375 0.75 0.625 1 0.375 1 0.875 0
@@ -7068,7 +7075,7 @@ createNode mesh -n "polySurfaceShape2" -p "|SkybridgeMeshes|XSupport4|polySurfac
 	setAttr ".iog[0].og[0].gcl" -type "componentList" 1 "f[0:19]";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
-	setAttr ".pv" -type "double2" 0.75 0.5 ;
+	setAttr ".pv" -type "double2" 0.5 0.375 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr -s 36 ".uvst[0].uvsp[0:35]" -type "float2" 0.375 0 0.625 0 0.625
 		 0.25 0.375 0.25 0.625 0.5 0.375 0.5 0.625 0.75 0.375 0.75 0.875 0 0.875 0.25 0.125
@@ -7158,7 +7165,7 @@ createNode mesh -n "polySurfaceShape1" -p "|SkybridgeMeshes|XSupport4|polySurfac
 	setAttr ".iog[0].og[0].gcl" -type "componentList" 1 "f[0:19]";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
-	setAttr ".pv" -type "double2" 0.75 0.375 ;
+	setAttr ".pv" -type "double2" 0.5 0.375 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr -s 36 ".uvst[0].uvsp[0:35]" -type "float2" 0.375 0 0.625 0 0.625
 		 0.25 0.375 0.25 0.625 0.5 0.375 0.5 0.625 0.75 0.375 0.75 0.875 0 0.875 0.25 0.125
@@ -7249,6 +7256,7 @@ createNode mesh -n "polySurfaceShape3" -p "|SkybridgeMeshes|XSupport4|polySurfac
 	setAttr ".iog[0].og[0].gcl" -type "componentList" 1 "f[0:15]";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
+	setAttr ".pv" -type "double2" 0.5 0.5 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr -s 27 ".uvst[0].uvsp[0:26]" -type "float2" 0.375 0 0.625 0 0.625
 		 0.25 0.375 0.25 0.625 0.5 0.375 0.5 0.625 0.75 0.375 0.75 0.625 1 0.375 1 0.875 0
@@ -7329,7 +7337,7 @@ createNode mesh -n "polySurfaceShape2" -p "|SkybridgeMeshes|XSupport5|polySurfac
 	setAttr ".iog[0].og[0].gcl" -type "componentList" 1 "f[0:19]";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
-	setAttr ".pv" -type "double2" 0.75 0.5 ;
+	setAttr ".pv" -type "double2" 0.5 0.375 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr -s 36 ".uvst[0].uvsp[0:35]" -type "float2" 0.375 0 0.625 0 0.625
 		 0.25 0.375 0.25 0.625 0.5 0.375 0.5 0.625 0.75 0.375 0.75 0.875 0 0.875 0.25 0.125
@@ -7419,7 +7427,7 @@ createNode mesh -n "polySurfaceShape1" -p "|SkybridgeMeshes|XSupport5|polySurfac
 	setAttr ".iog[0].og[0].gcl" -type "componentList" 1 "f[0:19]";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
-	setAttr ".pv" -type "double2" 0.75 0.375 ;
+	setAttr ".pv" -type "double2" 0.5 0.375 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr -s 36 ".uvst[0].uvsp[0:35]" -type "float2" 0.375 0 0.625 0 0.625
 		 0.25 0.375 0.25 0.625 0.5 0.375 0.5 0.625 0.75 0.375 0.75 0.875 0 0.875 0.25 0.125
@@ -7509,6 +7517,7 @@ createNode mesh -n "polySurfaceShape3" -p "|SkybridgeMeshes|XSupport5|polySurfac
 	setAttr ".iog[0].og[0].gcl" -type "componentList" 1 "f[0:15]";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
+	setAttr ".pv" -type "double2" 0.5 0.5 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr -s 27 ".uvst[0].uvsp[0:26]" -type "float2" 0.375 0 0.625 0 0.625
 		 0.25 0.375 0.25 0.625 0.5 0.375 0.5 0.625 0.75 0.375 0.75 0.625 1 0.375 1 0.875 0
@@ -7589,7 +7598,7 @@ createNode mesh -n "polySurfaceShape2" -p "|SkybridgeMeshes|XSupport6|polySurfac
 	setAttr ".iog[0].og[0].gcl" -type "componentList" 1 "f[0:19]";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
-	setAttr ".pv" -type "double2" 0.75 0.5 ;
+	setAttr ".pv" -type "double2" 0.5 0.375 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr -s 36 ".uvst[0].uvsp[0:35]" -type "float2" 0.375 0 0.625 0 0.625
 		 0.25 0.375 0.25 0.625 0.5 0.375 0.5 0.625 0.75 0.375 0.75 0.875 0 0.875 0.25 0.125
@@ -7679,7 +7688,7 @@ createNode mesh -n "polySurfaceShape1" -p "|SkybridgeMeshes|XSupport6|polySurfac
 	setAttr ".iog[0].og[0].gcl" -type "componentList" 1 "f[0:19]";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
-	setAttr ".pv" -type "double2" 0.75 0.375 ;
+	setAttr ".pv" -type "double2" 0.5 0.375 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr -s 36 ".uvst[0].uvsp[0:35]" -type "float2" 0.375 0 0.625 0 0.625
 		 0.25 0.375 0.25 0.625 0.5 0.375 0.5 0.625 0.75 0.375 0.75 0.875 0 0.875 0.25 0.125
@@ -7770,6 +7779,7 @@ createNode mesh -n "polySurfaceShape3" -p "|SkybridgeMeshes|XSupport6|polySurfac
 	setAttr ".iog[0].og[0].gcl" -type "componentList" 1 "f[0:15]";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
+	setAttr ".pv" -type "double2" 0.5 0.5 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr -s 27 ".uvst[0].uvsp[0:26]" -type "float2" 0.375 0 0.625 0 0.625
 		 0.25 0.375 0.25 0.625 0.5 0.375 0.5 0.625 0.75 0.375 0.75 0.625 1 0.375 1 0.875 0
@@ -7850,7 +7860,7 @@ createNode mesh -n "polySurfaceShape2" -p "|SkybridgeMeshes|XSupport7|polySurfac
 	setAttr ".iog[0].og[0].gcl" -type "componentList" 1 "f[0:19]";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
-	setAttr ".pv" -type "double2" 0.75 0.5 ;
+	setAttr ".pv" -type "double2" 0.5 0.375 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr -s 36 ".uvst[0].uvsp[0:35]" -type "float2" 0.375 0 0.625 0 0.625
 		 0.25 0.375 0.25 0.625 0.5 0.375 0.5 0.625 0.75 0.375 0.75 0.875 0 0.875 0.25 0.125
@@ -7940,7 +7950,7 @@ createNode mesh -n "polySurfaceShape1" -p "|SkybridgeMeshes|XSupport7|polySurfac
 	setAttr ".iog[0].og[0].gcl" -type "componentList" 1 "f[0:19]";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
-	setAttr ".pv" -type "double2" 0.75 0.375 ;
+	setAttr ".pv" -type "double2" 0.5 0.375 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr -s 36 ".uvst[0].uvsp[0:35]" -type "float2" 0.375 0 0.625 0 0.625
 		 0.25 0.375 0.25 0.625 0.5 0.375 0.5 0.625 0.75 0.375 0.75 0.875 0 0.875 0.25 0.125
@@ -8030,6 +8040,7 @@ createNode mesh -n "polySurfaceShape3" -p "|SkybridgeMeshes|XSupport7|polySurfac
 	setAttr ".iog[0].og[0].gcl" -type "componentList" 1 "f[0:15]";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
+	setAttr ".pv" -type "double2" 0.5 0.5 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr -s 27 ".uvst[0].uvsp[0:26]" -type "float2" 0.375 0 0.625 0 0.625
 		 0.25 0.375 0.25 0.625 0.5 0.375 0.5 0.625 0.75 0.375 0.75 0.625 1 0.375 1 0.875 0
@@ -8105,7 +8116,7 @@ createNode mesh -n "CableSupport19Shape" -p "CableSupport19";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
-	setAttr ".pv" -type "double2" 0.5 0.375 ;
+	setAttr ".pv" -type "double2" 0.5 0.5 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr -s 46 ".uvst[0].uvsp[0:45]" -type "float2" 0.375 0 0.625 0 0.375
 		 0.25 0.625 0.25 0.375 0.5 0.625 0.5 0.375 0.75 0.625 0.75 0.375 1 0.625 1 0.875 0
@@ -8347,7 +8358,7 @@ createNode mesh -n "CableSupport20Shape" -p "CableSupport20";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
-	setAttr ".pv" -type "double2" 0.5 0.375 ;
+	setAttr ".pv" -type "double2" 0.5 0.5 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr -s 46 ".uvst[0].uvsp[0:45]" -type "float2" 0.375 0 0.625 0 0.375
 		 0.25 0.625 0.25 0.375 0.5 0.625 0.5 0.375 0.75 0.625 0.75 0.375 1 0.625 1 0.875 0
@@ -8593,7 +8604,7 @@ createNode mesh -n "polySurfaceShape2" -p "|SkybridgeMeshes|XSupport8|polySurfac
 	setAttr ".iog[0].og[0].gcl" -type "componentList" 1 "f[0:19]";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
-	setAttr ".pv" -type "double2" 0.75 0.5 ;
+	setAttr ".pv" -type "double2" 0.5 0.375 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr -s 36 ".uvst[0].uvsp[0:35]" -type "float2" 0.375 0 0.625 0 0.625
 		 0.25 0.375 0.25 0.625 0.5 0.375 0.5 0.625 0.75 0.375 0.75 0.875 0 0.875 0.25 0.125
@@ -8681,7 +8692,7 @@ createNode mesh -n "polySurfaceShape1" -p "|SkybridgeMeshes|XSupport8|polySurfac
 	setAttr ".iog[0].og[0].gcl" -type "componentList" 1 "f[0:19]";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
-	setAttr ".pv" -type "double2" 0.75 0.375 ;
+	setAttr ".pv" -type "double2" 0.5 0.375 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr -s 36 ".uvst[0].uvsp[0:35]" -type "float2" 0.375 0 0.625 0 0.625
 		 0.25 0.375 0.25 0.625 0.5 0.375 0.5 0.625 0.75 0.375 0.75 0.875 0 0.875 0.25 0.125
@@ -8769,6 +8780,7 @@ createNode mesh -n "polySurfaceShape3" -p "|SkybridgeMeshes|XSupport8|polySurfac
 	setAttr ".iog[0].og[0].gcl" -type "componentList" 1 "f[0:15]";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
+	setAttr ".pv" -type "double2" 0.5 0.5 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr -s 27 ".uvst[0].uvsp[0:26]" -type "float2" 0.375 0 0.625 0 0.625
 		 0.25 0.375 0.25 0.625 0.5 0.375 0.5 0.625 0.75 0.375 0.75 0.625 1 0.375 1 0.875 0
@@ -8850,7 +8862,7 @@ createNode mesh -n "polySurfaceShape2" -p "|SkybridgeMeshes|XSupport9|polySurfac
 	setAttr ".iog[0].og[0].gcl" -type "componentList" 1 "f[0:19]";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
-	setAttr ".pv" -type "double2" 0.75 0.5 ;
+	setAttr ".pv" -type "double2" 0.5 0.375 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr -s 36 ".uvst[0].uvsp[0:35]" -type "float2" 0.375 0 0.625 0 0.625
 		 0.25 0.375 0.25 0.625 0.5 0.375 0.5 0.625 0.75 0.375 0.75 0.875 0 0.875 0.25 0.125
@@ -8938,7 +8950,7 @@ createNode mesh -n "polySurfaceShape1" -p "|SkybridgeMeshes|XSupport9|polySurfac
 	setAttr ".iog[0].og[0].gcl" -type "componentList" 1 "f[0:19]";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
-	setAttr ".pv" -type "double2" 0.75 0.375 ;
+	setAttr ".pv" -type "double2" 0.5 0.375 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr -s 36 ".uvst[0].uvsp[0:35]" -type "float2" 0.375 0 0.625 0 0.625
 		 0.25 0.375 0.25 0.625 0.5 0.375 0.5 0.625 0.75 0.375 0.75 0.875 0 0.875 0.25 0.125
@@ -9026,6 +9038,7 @@ createNode mesh -n "polySurfaceShape3" -p "|SkybridgeMeshes|XSupport9|polySurfac
 	setAttr ".iog[0].og[0].gcl" -type "componentList" 1 "f[0:15]";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
+	setAttr ".pv" -type "double2" 0.5 0.5 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr -s 27 ".uvst[0].uvsp[0:26]" -type "float2" 0.375 0 0.625 0 0.625
 		 0.25 0.375 0.25 0.625 0.5 0.375 0.5 0.625 0.75 0.375 0.75 0.625 1 0.375 1 0.875 0
@@ -9107,7 +9120,7 @@ createNode mesh -n "polySurfaceShape2" -p "|SkybridgeMeshes|XSupport10|polySurfa
 	setAttr ".iog[0].og[0].gcl" -type "componentList" 1 "f[0:19]";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
-	setAttr ".pv" -type "double2" 0.75 0.5 ;
+	setAttr ".pv" -type "double2" 0.5 0.375 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr -s 36 ".uvst[0].uvsp[0:35]" -type "float2" 0.375 0 0.625 0 0.625
 		 0.25 0.375 0.25 0.625 0.5 0.375 0.5 0.625 0.75 0.375 0.75 0.875 0 0.875 0.25 0.125
@@ -9197,7 +9210,7 @@ createNode mesh -n "polySurfaceShape1" -p "|SkybridgeMeshes|XSupport10|polySurfa
 	setAttr ".iog[0].og[0].gcl" -type "componentList" 1 "f[0:19]";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
-	setAttr ".pv" -type "double2" 0.75 0.375 ;
+	setAttr ".pv" -type "double2" 0.5 0.375 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr -s 36 ".uvst[0].uvsp[0:35]" -type "float2" 0.375 0 0.625 0 0.625
 		 0.25 0.375 0.25 0.625 0.5 0.375 0.5 0.625 0.75 0.375 0.75 0.875 0 0.875 0.25 0.125
@@ -9288,6 +9301,7 @@ createNode mesh -n "polySurfaceShape3" -p "|SkybridgeMeshes|XSupport10|polySurfa
 	setAttr ".iog[0].og[0].gcl" -type "componentList" 1 "f[0:15]";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
+	setAttr ".pv" -type "double2" 0.5 0.5 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr -s 27 ".uvst[0].uvsp[0:26]" -type "float2" 0.375 0 0.625 0 0.625
 		 0.25 0.375 0.25 0.625 0.5 0.375 0.5 0.625 0.75 0.375 0.75 0.625 1 0.375 1 0.875 0
@@ -9609,7 +9623,7 @@ createNode mesh -n "polySurfaceShape2" -p "|SkybridgeMeshes|XSupport11|polySurfa
 	setAttr ".iog[0].og[0].gcl" -type "componentList" 1 "f[0:19]";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
-	setAttr ".pv" -type "double2" 0.75 0.5 ;
+	setAttr ".pv" -type "double2" 0.5 0.375 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr -s 36 ".uvst[0].uvsp[0:35]" -type "float2" 0.375 0 0.625 0 0.625
 		 0.25 0.375 0.25 0.625 0.5 0.375 0.5 0.625 0.75 0.375 0.75 0.875 0 0.875 0.25 0.125
@@ -9699,7 +9713,7 @@ createNode mesh -n "polySurfaceShape1" -p "|SkybridgeMeshes|XSupport11|polySurfa
 	setAttr ".iog[0].og[0].gcl" -type "componentList" 1 "f[0:19]";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
-	setAttr ".pv" -type "double2" 0.75 0.375 ;
+	setAttr ".pv" -type "double2" 0.5 0.375 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr -s 36 ".uvst[0].uvsp[0:35]" -type "float2" 0.375 0 0.625 0 0.625
 		 0.25 0.375 0.25 0.625 0.5 0.375 0.5 0.625 0.75 0.375 0.75 0.875 0 0.875 0.25 0.125
@@ -9790,6 +9804,7 @@ createNode mesh -n "polySurfaceShape3" -p "|SkybridgeMeshes|XSupport11|polySurfa
 	setAttr ".iog[0].og[0].gcl" -type "componentList" 1 "f[0:15]";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
+	setAttr ".pv" -type "double2" 0.5 0.5 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr -s 27 ".uvst[0].uvsp[0:26]" -type "float2" 0.375 0 0.625 0 0.625
 		 0.25 0.375 0.25 0.625 0.5 0.375 0.5 0.625 0.75 0.375 0.75 0.625 1 0.375 1 0.875 0
@@ -9865,7 +9880,7 @@ createNode mesh -n "CableSupport23Shape" -p "CableSupport23";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
-	setAttr ".pv" -type "double2" 0.5 0.375 ;
+	setAttr ".pv" -type "double2" 0.5 0.5 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr -s 46 ".uvst[0].uvsp[0:45]" -type "float2" 0.375 0 0.625 0 0.375
 		 0.25 0.625 0.25 0.375 0.5 0.625 0.5 0.375 0.75 0.625 0.75 0.375 1 0.625 1 0.875 0
@@ -10108,7 +10123,7 @@ createNode mesh -n "BottomSupportShape1" -p "BottomSupport1";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
-	setAttr ".pv" -type "double2" 0.75 0.5 ;
+	setAttr ".pv" -type "double2" 0.625 0.5 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr -s 35 ".uvst[0].uvsp[0:34]" -type "float2" 0.375 0 0.625 0 0.375
 		 0.25 0.625 0.25 0.375 0.5 0.625 0.5 0.375 0.75 0.625 0.75 0.375 1 0.625 1 0.875 0
@@ -10236,14 +10251,14 @@ createNode mesh -n "polySurfaceShape12" -p "BottomSupport1";
 	setAttr ".ai_translator" -type "string" "polymesh";
 createNode transform -n "gratedfloorsmall2" -p "SkybridgeMeshes";
 	rename -uid "C7391613-4EF8-9F9C-07E7-B7A3A237D15C";
-	setAttr ".rp" -type "double3" 9.6500146484374998 -1.371170943714517 2.1652095939130158e-07 ;
-	setAttr ".sp" -type "double3" 9.6500146484374998 -1.371170943714517 2.1652095939130158e-07 ;
+	setAttr ".rp" -type "double3" 9.6500146484374998 -1.3594935028844655 2.1652095939130158e-07 ;
+	setAttr ".sp" -type "double3" 9.6500146484374998 -1.3594935028844655 2.1652095939130158e-07 ;
 createNode mesh -n "gratedfloorsmall2Shape" -p "gratedfloorsmall2";
 	rename -uid "7D1EB8FA-442F-A9A3-C582-DAA0D1E452DF";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
-	setAttr ".pv" -type "double2" 0.5 1 ;
+	setAttr ".pv" -type "double2" 0.5 0.5 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr -s 22 ".uvst[0].uvsp[0:21]" -type "float2" 0 0 1 0 0 1 1 1 0.5
 		 0 0.5 1 0.25 0 0.25 1 0.75 0 0.75 1 0 0 1 0 1 1 0 1 0 0 1 0 1 1 0 1 0 0 1 0 1 1 0
@@ -10252,13 +10267,13 @@ createNode mesh -n "gratedfloorsmall2Shape" -p "gratedfloorsmall2";
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
-	setAttr -s 16 ".pt[0:15]" -type "float3"  9.6500149 -1.371171 -1.6576504 
-		9.6500149 -1.371171 -1.6576504 9.6500149 -1.371171 1.6576511 9.6500149 -1.371171 
-		1.6576511 9.6500149 -1.371171 -1.6576504 9.6500149 -1.371171 1.6576511 9.6500149 
-		-1.371171 -1.6576504 9.6500149 -1.371171 1.6576511 9.6500149 -1.371171 -1.6576504 
-		9.6500149 -1.371171 1.6576511 9.6500149 -1.371171 -1.6576504 9.6500149 -1.371171 
-		1.6576511 9.6500149 -1.371171 -1.6576504 9.6500149 -1.371171 1.6576511 9.6500149 
-		-1.371171 -4.8330593 9.6500149 -1.371171 -4.8330593;
+	setAttr -s 16 ".pt[0:15]" -type "float3"  9.6500149 -1.3594936 -1.6576504 
+		9.6500149 -1.3594936 -1.6576504 9.6500149 -1.3594936 1.6576511 9.6500149 -1.3594936 
+		1.6576511 9.6500149 -1.3594936 -1.6576504 9.6500149 -1.3594936 1.6576511 9.6500149 
+		-1.3594936 -1.6576504 9.6500149 -1.3594936 1.6576511 9.6500149 -1.3594936 -1.6576504 
+		9.6500149 -1.3594936 1.6576511 9.6500149 -1.3594936 -1.6576504 9.6500149 -1.3594936 
+		1.6576511 9.6500149 -1.3594936 -1.6576504 9.6500149 -1.3594936 1.6576511 9.6500149 
+		-1.3594936 -4.8330593 9.6500149 -1.3594936 -4.8330593;
 	setAttr -s 16 ".vt[0:15]"  -9.65001488 0 0.61160237 5.94922352 0 0.61160237
 		 -9.65001488 0 -0.61160249 5.94922352 0 -0.61160249 -1.85039556 0 0.61160237 -1.85039556 0 -0.61160249
 		 -5.75020504 0 0.61160237 -5.75020504 0 -0.61160249 2.049414158 0 0.61160237 2.049414158 0 -0.61160249
@@ -10343,7 +10358,7 @@ createNode mesh -n "BottomSupportShape" -p "BottomSupport";
 	setAttr ".gtag[4].gtagcmp" -type "componentList" 1 "f[4]";
 	setAttr ".gtag[5].gtagnm" -type "string" "top";
 	setAttr ".gtag[5].gtagcmp" -type "componentList" 1 "f[1]";
-	setAttr ".pv" -type "double2" 0.25 0.125 ;
+	setAttr ".pv" -type "double2" 0.625 0.5 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr -s 39 ".uvst[0].uvsp[0:38]" -type "float2" 0.375 0 0.625 0 0.375
 		 0.25 0.625 0.25 0.375 0.5 0.625 0.5 0.375 0.75 0.625 0.75 0.375 1 0.625 1 0.875 0
@@ -10450,7 +10465,7 @@ createNode mesh -n "CableSupport24Shape" -p "CableSupport24";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
-	setAttr ".pv" -type "double2" 0.5 0.375 ;
+	setAttr ".pv" -type "double2" 0.5 0.5 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr -s 46 ".uvst[0].uvsp[0:45]" -type "float2" 0.375 0 0.625 0 0.375
 		 0.25 0.625 0.25 0.375 0.5 0.625 0.5 0.375 0.75 0.625 0.75 0.375 1 0.625 1 0.875 0
@@ -10692,7 +10707,7 @@ createNode mesh -n "ButtomSupportShape" -p "ButtomSupport";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
-	setAttr ".pv" -type "double2" 0.875 0.125 ;
+	setAttr ".pv" -type "double2" 0.625 0.5 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr -s 20 ".uvst[0].uvsp[0:19]" -type "float2" 0.375 0 0.625 0 0.375
 		 0.25 0.625 0.25 0.375 0.5 0.625 0.5 0.375 0.75 0.625 0.75 0.375 1 0.625 1 0.875 0
@@ -10754,7 +10769,7 @@ createNode mesh -n "TopSupportShape2" -p "TopSupport2";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
-	setAttr ".pv" -type "double2" 0.75 0.5 ;
+	setAttr ".pv" -type "double2" 0.625 0.5 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr -s 35 ".uvst[0].uvsp[0:34]" -type "float2" 0.375 0 0.625 0 0.375
 		 0.25 0.625 0.25 0.375 0.5 0.625 0.5 0.375 0.75 0.625 0.75 0.375 1 0.625 1 0.875 0
@@ -10889,7 +10904,7 @@ createNode mesh -n "TopSupportShape1" -p "TopSupport1";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
-	setAttr ".pv" -type "double2" 0.875 0.125 ;
+	setAttr ".pv" -type "double2" 0.625 0.5 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr -s 39 ".uvst[0].uvsp[0:38]" -type "float2" 0.375 0 0.625 0 0.375
 		 0.25 0.625 0.25 0.375 0.5 0.625 0.5 0.375 0.75 0.625 0.75 0.375 1 0.625 1 0.875 0
@@ -10996,7 +11011,7 @@ createNode mesh -n "TopSupportShape" -p "TopSupport";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
-	setAttr ".pv" -type "double2" 0.875 0.125 ;
+	setAttr ".pv" -type "double2" 0.625 0.5 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr -s 20 ".uvst[0].uvsp[0:19]" -type "float2" 0.375 0 0.625 0 0.375
 		 0.25 0.625 0.25 0.375 0.5 0.625 0.5 0.375 0.75 0.625 0.75 0.375 1 0.625 1 0.875 0
@@ -11058,7 +11073,7 @@ createNode mesh -n "CableSupport25Shape" -p "CableSupport25";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
-	setAttr ".pv" -type "double2" 0.5 0.375 ;
+	setAttr ".pv" -type "double2" 0.5 0.5 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr -s 46 ".uvst[0].uvsp[0:45]" -type "float2" 0.375 0 0.625 0 0.375
 		 0.25 0.625 0.25 0.375 0.5 0.625 0.5 0.375 0.75 0.625 0.75 0.375 1 0.625 1 0.875 0
