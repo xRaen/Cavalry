@@ -1,6 +1,6 @@
 //Maya ASCII 2022 scene
 //Name: BarracksBuilding_01.ma
-//Last modified: Thu, Feb 24, 2022 09:44:51 AM
+//Last modified: Thu, Feb 24, 2022 12:00:18 PM
 //Codeset: 1252
 file -rdi 1 -ns "BarracksBunks" -rfn "BarracksBunksRN" -op "v=0;" -typ "mayaAscii"
 		 "F:/Repositories/Cavalry/Maya Project Files//Env/Barracks/BarracksBunks.ma";
@@ -17,13 +17,13 @@ fileInfo "product" "Maya 2022";
 fileInfo "version" "2022";
 fileInfo "cutIdentifier" "202102181415-29bfc1879c";
 fileInfo "osv" "Windows 10 Enterprise v2009 (Build: 19042)";
-fileInfo "UUID" "206331A1-45F5-37C1-21DD-2C839EAE0298";
+fileInfo "UUID" "382C27F2-4D3B-50EB-FD5E-04B1F2FE8996";
 fileInfo "license" "education";
 createNode transform -s -n "persp";
 	rename -uid "52BA9D45-456C-4E5E-B5EE-7A8BAD07BB2B";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -148.95407065931181 193.50441735862375 308.88306089026497 ;
-	setAttr ".r" -type "double3" -10.538352786567604 685.79999999987865 -9.6137993697221721e-16 ;
+	setAttr ".t" -type "double3" -13.122156047942678 187.00822167603744 657.83396422636724 ;
+	setAttr ".r" -type "double3" -14.138352786566575 629.39999999986924 -2.2899993706537323e-13 ;
 	setAttr ".rp" -type "double3" -1.7763568394002505e-14 1.1368683772161603e-13 -1.1368683772161603e-13 ;
 	setAttr ".rpt" -type "double3" 1.7905155203266967e-13 -1.0453928428956711e-13 1.0547421911660545e-13 ;
 createNode camera -s -n "perspShape" -p "persp";
@@ -10344,6 +10344,7 @@ createNode mesh -n "f1_wallsShape" -p "f1_walls";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
+	setAttr ".pv" -type "double2" 0.12310338020324707 2.2998046875 ;
 	setAttr -s 3 ".uvst";
 	setAttr ".uvst[0].uvsn" -type "string" "LightMapUV";
 	setAttr ".uvst[1].uvsn" -type "string" "UVmap_1";
@@ -10733,7 +10734,7 @@ createNode mesh -n "polySurfaceShape2" -p "f1_walls";
 	setAttr ".ai_translator" -type "string" "polymesh";
 createNode transform -n "f1_bathroom_wall" -p "barracks_building_grp";
 	rename -uid "CA4D903E-4029-2D91-49C4-D19CE0FDC3A0";
-	setAttr ".t" -type "double3" 752.94655013794932 59.388803996249067 862.92781074428217 ;
+	setAttr ".t" -type "double3" 752.94655013794932 59.388803996249067 831.35572936566518 ;
 	setAttr ".s" -type "double3" 158.02740777655941 158.02740777655941 38.356441772985292 ;
 	setAttr ".rp" -type "double3" -191.50575423951182 -79.013700999422909 -19.178215113784628 ;
 	setAttr ".sp" -type "double3" -1.2118515195179898 -0.49999998171926729 -0.49999984949834442 ;
