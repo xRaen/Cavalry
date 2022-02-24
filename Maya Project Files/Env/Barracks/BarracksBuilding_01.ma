@@ -1,6 +1,6 @@
 //Maya ASCII 2022 scene
 //Name: BarracksBuilding_01.ma
-//Last modified: Thu, Feb 24, 2022 09:02:49 AM
+//Last modified: Thu, Feb 24, 2022 09:44:51 AM
 //Codeset: 1252
 file -rdi 1 -ns "BarracksBunks" -rfn "BarracksBunksRN" -op "v=0;" -typ "mayaAscii"
 		 "F:/Repositories/Cavalry/Maya Project Files//Env/Barracks/BarracksBunks.ma";
@@ -17,13 +17,13 @@ fileInfo "product" "Maya 2022";
 fileInfo "version" "2022";
 fileInfo "cutIdentifier" "202102181415-29bfc1879c";
 fileInfo "osv" "Windows 10 Enterprise v2009 (Build: 19042)";
-fileInfo "UUID" "8459572E-45D3-D81C-1F11-C49D45EE4A9C";
+fileInfo "UUID" "206331A1-45F5-37C1-21DD-2C839EAE0298";
 fileInfo "license" "education";
 createNode transform -s -n "persp";
 	rename -uid "52BA9D45-456C-4E5E-B5EE-7A8BAD07BB2B";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 4540.2834254890295 2157.1138229337666 1485.7081710338468 ;
-	setAttr ".r" -type "double3" -23.738352808556055 432.59999999969978 5.3179277940894309e-15 ;
+	setAttr ".t" -type "double3" -148.95407065931181 193.50441735862375 308.88306089026497 ;
+	setAttr ".r" -type "double3" -10.538352786567604 685.79999999987865 -9.6137993697221721e-16 ;
 	setAttr ".rp" -type "double3" -1.7763568394002505e-14 1.1368683772161603e-13 -1.1368683772161603e-13 ;
 	setAttr ".rpt" -type "double3" 1.7905155203266967e-13 -1.0453928428956711e-13 1.0547421911660545e-13 ;
 createNode camera -s -n "perspShape" -p "persp";
@@ -31,11 +31,11 @@ createNode camera -s -n "perspShape" -p "persp";
 	setAttr -k off ".v" no;
 	setAttr ".pze" yes;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 4446.3250766849233;
+	setAttr ".coi" 560.44151965559081;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
-	setAttr ".tp" -type "double3" 2 0 -4.9999040521142888 ;
+	setAttr ".tp" -type "double3" 752.94655013794932 150.19152519829368 744.66358298571538 ;
 	setAttr ".hc" -type "string" "viewSet -p %camera";
 	setAttr ".ai_translator" -type "string" "perspective";
 createNode transform -s -n "top";
@@ -102,7 +102,7 @@ createNode mesh -n "f2_floor_2Shape" -p "f2_floor_2";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
-	setAttr ".pv" -type "double2" 0.71478499472141266 0.5 ;
+	setAttr ".pv" -type "double2" 0.5 0.5 ;
 	setAttr -s 2 ".uvst";
 	setAttr ".uvst[0].uvsn" -type "string" "LightMapUV";
 	setAttr -s 320 ".uvst[0].uvsp";
@@ -9869,6 +9869,7 @@ createNode mesh -n "f1_pillarsShape" -p "f1_pillars";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
+	setAttr ".pv" -type "double2" 0.97998046875 2.2998049259185791 ;
 	setAttr -s 3 ".uvst";
 	setAttr ".uvst[0].uvsn" -type "string" "LightMapUV";
 	setAttr -s 140 ".uvst[0].uvsp[0:139]" -type "float2" 0 0 0 0 0 0 0 0 0
@@ -10341,6 +10342,20 @@ createNode transform -n "f1_walls" -p "barracks_building_grp";
 createNode mesh -n "f1_wallsShape" -p "f1_walls";
 	rename -uid "95EA64B1-4778-4C39-3178-45A3AA54F8AD";
 	setAttr -k off ".v";
+	setAttr ".vir" yes;
+	setAttr ".vif" yes;
+	setAttr -s 3 ".uvst";
+	setAttr ".uvst[0].uvsn" -type "string" "LightMapUV";
+	setAttr ".uvst[1].uvsn" -type "string" "UVmap_1";
+	setAttr ".cuvs" -type "string" "LightMapUV";
+	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".covm[0]"  0 1 1;
+	setAttr ".cdvm[0]"  0 1 1;
+	setAttr ".ai_translator" -type "string" "polymesh";
+createNode mesh -n "polySurfaceShape2" -p "f1_walls";
+	rename -uid "F576FC4D-4427-E1F5-EEB1-ABBBF46E7F2C";
+	setAttr -k off ".v";
+	setAttr ".io" yes;
 	setAttr -s 2 ".iog[0].og";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -10714,6 +10729,87 @@ createNode mesh -n "f1_wallsShape" -p "f1_walls";
 	setAttr -s 2 ".pd";
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".pd[1]" -type "dataPolyComponent" Index_Data UV 0 ;
+	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
+	setAttr ".ai_translator" -type "string" "polymesh";
+createNode transform -n "f1_bathroom_wall" -p "barracks_building_grp";
+	rename -uid "CA4D903E-4029-2D91-49C4-D19CE0FDC3A0";
+	setAttr ".t" -type "double3" 752.94655013794932 59.388803996249067 862.92781074428217 ;
+	setAttr ".s" -type "double3" 158.02740777655941 158.02740777655941 38.356441772985292 ;
+	setAttr ".rp" -type "double3" -191.50575423951182 -79.013700999422909 -19.178215113784628 ;
+	setAttr ".sp" -type "double3" -1.2118515195179898 -0.49999998171926729 -0.49999984949834442 ;
+	setAttr ".spt" -type "double3" -190.29390271999384 -78.513701017703639 -18.678215264286283 ;
+createNode mesh -n "f1_bathroom_wallShape" -p "f1_bathroom_wall";
+	rename -uid "D8978243-4656-B251-8335-70A01DA19429";
+	setAttr -k off ".v";
+	setAttr ".vir" yes;
+	setAttr ".vif" yes;
+	setAttr ".pv" -type "double2" 0.51249885559082031 0.5 ;
+	setAttr ".uvst[0].uvsn" -type "string" "map1";
+	setAttr ".cuvs" -type "string" "map1";
+	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".covm[0]"  0 1 1;
+	setAttr ".cdvm[0]"  0 1 1;
+	setAttr -s 12 ".pt[4:11]" -type "float3"  -0.31646025 0 0 -0.31646025 
+		0 0 -0.31646025 0 0 -0.31646025 0 0 -0.31646025 0 0 -0.31646025 0 0 -0.31646025 0 
+		0 -0.31646025 0 0;
+	setAttr ".ai_translator" -type "string" "polymesh";
+createNode transform -n "f1_bathroom_2nd_wall" -p "barracks_building_grp";
+	rename -uid "8D3C7944-41FF-F3C4-981D-6D84CB8B1AC3";
+	setAttr ".t" -type "double3" 752.94655013794932 59.388803996249067 -128.41049948582474 ;
+	setAttr ".s" -type "double3" 158.02740777655941 158.02740777655941 38.356441772985292 ;
+	setAttr ".rp" -type "double3" -191.50575423951182 -79.013700999422909 -19.178215113784628 ;
+	setAttr ".sp" -type "double3" -1.2118515195179898 -0.49999998171926729 -0.49999984949834442 ;
+	setAttr ".spt" -type "double3" -190.29390271999384 -78.513701017703639 -18.678215264286283 ;
+createNode mesh -n "f1_bathroom_2nd_wallShape" -p "f1_bathroom_2nd_wall";
+	rename -uid "6F2348EC-4AB5-3B9F-7E59-8C9078BBAF05";
+	setAttr -k off ".v";
+	setAttr ".vir" yes;
+	setAttr ".vif" yes;
+	setAttr ".pv" -type "double2" 0.51249885559082031 0.5 ;
+	setAttr ".uvst[0].uvsn" -type "string" "map1";
+	setAttr -s 20 ".uvst[0].uvsp[0:19]" -type "float2" 0.625 0 0.875 0 0.875
+		 0.25 0.375 0.27499771 0.62499994 0.5 0.375 0.47500229 0.62499994 1 0.37700874 1 0.375
+		 0.97500229 0.37700874 0.25 0.62499994 0.25 0.14999771 0.25 0.14999776 1.8626451e-09
+		 0.35000223 1.8626451e-09 0.37700874 0.75 0.625 0.74999994 0.37700871 1.8859282e-08
+		 0.35000229 0.25 0.37700871 0.5 0.375 0.77499771;
+	setAttr ".cuvs" -type "string" "map1";
+	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".covm[0]"  0 1 1;
+	setAttr ".cdvm[0]"  0 1 1;
+	setAttr -s 12 ".pt[4:11]" -type "float3"  -0.31646025 0 0 -0.31646025 
+		0 0 -0.31646025 0 0 -0.31646025 0 0 -0.31646025 0 0 -0.31646025 0 0 -0.31646025 0 
+		0 -0.31646025 0 0;
+	setAttr -s 12 ".vt[0:11]"  1.80865192 -0.49999991 0.5 1.80865192 1.79041982 0.5
+		 1.80865192 1.79041982 -0.5 1.80865192 -0.49999991 -0.5 -1.2118516 -0.49999991 0.40000916
+		 -1.18758225 -0.49999991 0.5 -1.2118516 1.79041982 0.40000916 -1.18758225 1.79041982 0.5
+		 -1.2118516 1.79041982 -0.40000916 -1.18758225 1.79041982 -0.5 -1.2118516 -0.49999991 -0.40000916
+		 -1.18758225 -0.49999991 -0.5;
+	setAttr -s 20 ".ed[0:19]"  0 1 0 1 2 0 2 3 0 3 0 0 5 0 0 5 4 0 6 8 0
+		 7 1 0 7 6 0 9 2 0 9 8 0 10 4 0 11 3 0 11 10 0 4 6 0 7 5 0 8 10 0 11 9 0 7 9 0 5 11 0;
+	setAttr -s 10 -ch 40 ".fc[0:9]" -type "polyFaces" 
+		f 4 15 4 0 -8
+		mu 0 4 9 16 0 10
+		f 4 17 9 2 -13
+		mu 0 4 14 18 4 15
+		f 4 -4 -3 -2 -1
+		mu 0 4 0 1 2 10
+		f 4 16 11 14 6
+		mu 0 4 11 12 13 17
+		f 4 -9 18 10 -7
+		mu 0 4 3 9 18 5
+		f 4 19 12 3 -5
+		mu 0 4 7 14 15 6
+		f 4 -6 -16 8 -15
+		mu 0 4 13 16 9 17
+		f 4 -11 -18 13 -17
+		mu 0 4 5 18 14 19
+		f 4 -19 7 1 -10
+		mu 0 4 18 9 10 4
+		f 4 -14 -20 5 -12
+		mu 0 4 19 14 7 8;
+	setAttr ".cd" -type "dataPolyComponent" Index_Data Edge 0 ;
+	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
+	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 	setAttr ".ai_translator" -type "string" "polymesh";
 createNode fosterParent -n "BarracksLockersRNfosterParent1";
@@ -32788,6 +32884,54 @@ createNode shadingEngine -n "lambert2SG";
 	setAttr ".ro" yes;
 createNode materialInfo -n "materialInfo24";
 	rename -uid "8C6EACC9-4193-0F3C-7707-6BAF475A3AD4";
+createNode polyCube -n "polyCube1";
+	rename -uid "0AF83091-43BD-BE76-6D10-96A42365113B";
+	setAttr ".cuv" 4;
+createNode polyBevel3 -n "polyBevel1";
+	rename -uid "7C1C36F7-4CA7-6E1B-5356-31BF86BE2777";
+	setAttr ".uopa" yes;
+	setAttr ".ics" -type "componentList" 2 "e[4]" "e[8]";
+	setAttr ".ix" -type "matrix" 158.02740777655941 0 0 0 0 158.02740777655941 0 0 0 0 38.356441772985292 0
+		 752.94655013795 59.388803996249067 904.85936745753463 1;
+	setAttr ".ws" yes;
+	setAttr ".oaf" yes;
+	setAttr ".f" 0.19999999999999996;
+	setAttr ".at" 180;
+	setAttr ".sn" yes;
+	setAttr ".mv" yes;
+	setAttr ".mvt" 0.0001;
+	setAttr ".sa" 30;
+createNode polyTweak -n "polyTweak1";
+	rename -uid "8701E28D-4BC3-0F8A-F196-07A29B2841B1";
+	setAttr ".uopa" yes;
+	setAttr -s 8 ".tk[0:7]" -type "float3"  -0.71185136 0 0 1.30865312
+		 0 0 -0.71185136 1.29041982 -2.9802322e-08 1.30865312 1.29041982 -2.9802322e-08 -0.71185136
+		 1.29041982 -2.9802322e-08 1.30865312 1.29041982 -2.9802322e-08 -0.71185136 0 0 1.30865312
+		 0 0;
+createNode polyConnectComponents -n "polyConnectComponents1";
+	rename -uid "EE1A657C-4DA8-B434-4010-FFA4DDA6BD94";
+	setAttr ".uopa" yes;
+	setAttr ".ics" -type "componentList" 2 "vtx[7]" "vtx[9]";
+createNode polyConnectComponents -n "polyConnectComponents2";
+	rename -uid "F15AA46A-4E49-1DCB-6C1D-4EB24270B980";
+	setAttr ".uopa" yes;
+	setAttr ".ics" -type "componentList" 2 "vtx[5]" "vtx[11]";
+createNode polyCollapseEdge -n "polyCollapseEdge1";
+	rename -uid "DB2E4221-4B58-3D61-3B54-F6A80B336A1D";
+	setAttr ".ics" -type "componentList" 8 "e[27]" "e[29]" "e[47]" "e[49]" "e[90]" "e[92]" "e[94:96]" "e[98]";
+createNode polyBevel3 -n "polyBevel2";
+	rename -uid "8D85BDED-47B7-8009-9B83-ECBC65BAA01F";
+	setAttr ".uopa" yes;
+	setAttr ".ics" -type "componentList" 6 "e[1]" "e[6]" "e[9]" "e[18]" "e[41]" "e[78:80]";
+	setAttr ".ix" -type "matrix" 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1;
+	setAttr ".ws" yes;
+	setAttr ".oaf" yes;
+	setAttr ".f" 0.19999999999999996;
+	setAttr ".at" 180;
+	setAttr ".sn" yes;
+	setAttr ".mv" yes;
+	setAttr ".mvt" 0.0001;
+	setAttr ".sa" 30;
 select -ne :time1;
 	setAttr ".o" 1;
 	setAttr ".unw" 1;
@@ -32807,7 +32951,7 @@ select -ne :postProcessList1;
 select -ne :defaultRenderingList1;
 	setAttr -s 2 ".r";
 select -ne :initialShadingGroup;
-	setAttr -s 69 ".dsm";
+	setAttr -s 71 ".dsm";
 	setAttr ".ro" yes;
 select -ne :initialParticleSE;
 	setAttr ".ro" yes;
@@ -32824,6 +32968,8 @@ select -ne :defaultColorMgtGlobals;
 select -ne :hardwareRenderGlobals;
 	setAttr ".ctrs" 256;
 	setAttr ".btrs" 512;
+connectAttr "polyBevel2.out" "f1_wallsShape.i";
+connectAttr "polyConnectComponents2.out" "f1_bathroom_wallShape.i";
 connectAttr ":initialShadingGroup.mwc" "|bed_shell_grp|bed_grp|bed_blanket|bed_blanketShape.iog.og[0].gco"
 		;
 connectAttr ":initialShadingGroup.mwc" "|bed_shell_grp|bed_grp|bed_mattress|bed_mattressShape.iog.og[0].gco"
@@ -32959,6 +33105,14 @@ connectAttr "blinn2.msg" "materialInfo23.m";
 connectAttr "lambert2.oc" "lambert2SG.ss";
 connectAttr "lambert2SG.msg" "materialInfo24.sg";
 connectAttr "lambert2.msg" "materialInfo24.m";
+connectAttr "polyTweak1.out" "polyBevel1.ip";
+connectAttr "f1_bathroom_wallShape.wm" "polyBevel1.mp";
+connectAttr "polyCube1.out" "polyTweak1.ip";
+connectAttr "polyBevel1.out" "polyConnectComponents1.ip";
+connectAttr "polyConnectComponents1.out" "polyConnectComponents2.ip";
+connectAttr "polySurfaceShape2.o" "polyCollapseEdge1.ip";
+connectAttr "polyCollapseEdge1.out" "polyBevel2.ip";
+connectAttr "f1_wallsShape.wm" "polyBevel2.mp";
 connectAttr "Barracks_MainFloor_F2_geoFBXASC046001SG.pa" ":renderPartition.st" -na
 		;
 connectAttr "Barracks_MainFloor_F2_geoFBXASC046001SG1.pa" ":renderPartition.st" 
@@ -33160,4 +33314,6 @@ connectAttr "f1_pillarsShape.iog" ":initialShadingGroup.dsm" -na;
 connectAttr "floorShape.iog" ":initialShadingGroup.dsm" -na;
 connectAttr "shellShape.iog" ":initialShadingGroup.dsm" -na;
 connectAttr "f2_floor_2Shape.iog" ":initialShadingGroup.dsm" -na;
+connectAttr "f1_bathroom_wallShape.iog" ":initialShadingGroup.dsm" -na;
+connectAttr "f1_bathroom_2nd_wallShape.iog" ":initialShadingGroup.dsm" -na;
 // End of BarracksBuilding_01.ma
