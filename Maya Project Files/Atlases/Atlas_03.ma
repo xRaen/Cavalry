@@ -1,6 +1,6 @@
 //Maya ASCII 2022 scene
 //Name: Atlas_03.ma
-//Last modified: Wed, Mar 02, 2022 11:26:41 AM
+//Last modified: Wed, Mar 02, 2022 11:30:14 AM
 //Codeset: 1252
 requires maya "2022";
 requires "stereoCamera" "10.0";
@@ -12,13 +12,13 @@ fileInfo "product" "Maya 2022";
 fileInfo "version" "2022";
 fileInfo "cutIdentifier" "202102181415-29bfc1879c";
 fileInfo "osv" "Windows 10 Home v2009 (Build: 19043)";
-fileInfo "UUID" "ABE33646-4D65-6DF4-8257-BF95B43749E0";
+fileInfo "UUID" "52661383-4A50-E821-634D-F08382479CC3";
 fileInfo "license" "education";
 createNode transform -s -n "persp";
 	rename -uid "7918ACC8-4ACC-6CE3-62D2-ECA8213A7E5D";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 17.284963799782005 12.815357810765381 1.6213559160116933 ;
-	setAttr ".r" -type "double3" -32.138352729686162 81.799999999998207 -2.2299505428749623e-14 ;
+	setAttr ".t" -type "double3" 14.791111263780534 12.263002049454226 -2.1208086418317227 ;
+	setAttr ".r" -type "double3" -33.338352729678746 91.799999999999017 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "C0DB6493-4F60-07E6-04D1-CC9D9568FD51";
 	setAttr -k off ".v" no;
@@ -26,7 +26,7 @@ createNode camera -s -n "perspShape" -p "persp";
 	setAttr ".ncp" 0.001;
 	setAttr ".fcp" 100;
 	setAttr ".fd" 0.05;
-	setAttr ".coi" 24.45359849025732;
+	setAttr ".coi" 20.302232816853465;
 	setAttr ".ow" 0.1;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
@@ -94,7 +94,6 @@ createNode camera -s -n "sideShape" -p "side";
 	setAttr ".ai_translator" -type "string" "orthographic";
 createNode transform -n "Base";
 	rename -uid "656C4582-48BB-2595-0D73-88AB48630CB8";
-	setAttr ".v" no;
 createNode transform -n "group" -p "Base";
 	rename -uid "746F68A6-4B0F-1035-1D64-99B179B97833";
 	setAttr ".rp" -type "double3" 7.6293945312500002e-08 0 0 ;
@@ -3098,6 +3097,7 @@ createNode mesh -n "polySurfaceShape4" -p "|Bake|Small|SmallPannel4";
 	setAttr ".ai_translator" -type "string" "polymesh";
 createNode transform -n "ID";
 	rename -uid "4EC960DB-4CC4-AAA2-9C65-BEAFA1E8DBEA";
+	setAttr ".v" no;
 createNode transform -n "group" -p "ID";
 	rename -uid "6F998230-44FA-4199-F389-5A8E799D6CA2";
 	setAttr ".rp" -type "double3" 7.6293945312500002e-08 0 0 ;
@@ -4601,8 +4601,8 @@ createNode mesh -n "polySurfaceShape4" -p "|ID|Small|SmallPannel4";
 	setAttr ".ai_translator" -type "string" "polymesh";
 createNode lightLinker -s -n "lightLinker1";
 	rename -uid "A32A6570-41F0-A6C0-B452-518FE118B8C0";
-	setAttr -s 8 ".lnk";
-	setAttr -s 8 ".slnk";
+	setAttr -s 9 ".lnk";
+	setAttr -s 9 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
 	rename -uid "4C2E3536-4AAD-352B-1D5B-D6AD1696B77E";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
@@ -4704,8 +4704,8 @@ createNode gameFbxExporter -n "gameExporterPreset1";
 	setAttr ".ebm" yes;
 	setAttr ".inc" yes;
 	setAttr ".fv" -type "string" "FBX201800";
-	setAttr ".exp" -type "string" "I:/Cavalry/Maya Project Files//Atlases/Baking";
-	setAttr ".exf" -type "string" "Atlas_01_SM_ID";
+	setAttr ".exp" -type "string" "I:/Cavalry/Maya Project Files//Env/Exports/Barracks";
+	setAttr ".exf" -type "string" "Locker_01_SM_Low";
 createNode gameFbxExporter -n "gameExporterPreset2";
 	rename -uid "D439AB3E-4954-172A-191B-CE98D58C0E8F";
 	setAttr ".pn" -type "string" "Anim Default";
@@ -4759,6 +4759,15 @@ createNode shadingEngine -n "lambert5SG";
 	setAttr ".ro" yes;
 createNode materialInfo -n "materialInfo6";
 	rename -uid "E1AAB5AF-41EC-0291-EBB7-DE9974D705FB";
+createNode lambert -n "Atlas_01_Mat";
+	rename -uid "6FB65D15-4F8A-4869-979D-2B882397821F";
+createNode shadingEngine -n "lambert6SG";
+	rename -uid "1578F211-4796-1B53-C4A1-33ACC8CE58FD";
+	setAttr ".ihi" 0;
+	setAttr -s 9 ".dsm";
+	setAttr ".ro" yes;
+createNode materialInfo -n "materialInfo7";
+	rename -uid "C15FEF0E-4FE2-3CCC-941B-9FB03AA0AD07";
 select -ne :time1;
 	setAttr ".o" 1;
 	setAttr ".unw" 1;
@@ -4769,15 +4778,15 @@ select -ne :hardwareRenderingGlobals;
 		 0 0 0 0 ;
 	setAttr ".fprt" yes;
 select -ne :renderPartition;
-	setAttr -s 8 ".st";
+	setAttr -s 9 ".st";
 select -ne :renderGlobalsList1;
 select -ne :defaultShaderList1;
-	setAttr -s 11 ".s";
+	setAttr -s 12 ".s";
 select -ne :postProcessList1;
 	setAttr -s 2 ".p";
 select -ne :defaultRenderingList1;
 select -ne :initialShadingGroup;
-	setAttr -s 18 ".dsm";
+	setAttr -s 9 ".dsm";
 	setAttr ".ro" yes;
 select -ne :initialParticleSE;
 	setAttr ".ro" yes;
@@ -4804,6 +4813,7 @@ relationship "link" ":lightLinker1" "lambert2SG.message" ":defaultLightSet.messa
 relationship "link" ":lightLinker1" "lambert3SG.message" ":defaultLightSet.message";
 relationship "link" ":lightLinker1" "lambert4SG.message" ":defaultLightSet.message";
 relationship "link" ":lightLinker1" "lambert5SG.message" ":defaultLightSet.message";
+relationship "link" ":lightLinker1" "lambert6SG.message" ":defaultLightSet.message";
 relationship "shadowLink" ":lightLinker1" ":initialShadingGroup.message" ":defaultLightSet.message";
 relationship "shadowLink" ":lightLinker1" ":initialParticleSE.message" ":defaultLightSet.message";
 relationship "shadowLink" ":lightLinker1" "BunksHousingSG.message" ":defaultLightSet.message";
@@ -4812,6 +4822,7 @@ relationship "shadowLink" ":lightLinker1" "lambert2SG.message" ":defaultLightSet
 relationship "shadowLink" ":lightLinker1" "lambert3SG.message" ":defaultLightSet.message";
 relationship "shadowLink" ":lightLinker1" "lambert4SG.message" ":defaultLightSet.message";
 relationship "shadowLink" ":lightLinker1" "lambert5SG.message" ":defaultLightSet.message";
+relationship "shadowLink" ":lightLinker1" "lambert6SG.message" ":defaultLightSet.message";
 connectAttr "layerManager.dli[0]" "defaultLayer.id";
 connectAttr "renderLayerManager.rlmi[0]" "defaultRenderLayer.rlid";
 connectAttr "MaterialFBXASC046001.oc" "BunksHousingSG.ss";
@@ -4846,35 +4857,37 @@ connectAttr "|ID|group|pasted__bed_shell_grp|pasted__bed_grp|pasted__bed_blanket
 		 -na;
 connectAttr "lambert5SG.msg" "materialInfo6.sg";
 connectAttr "ID_Green.msg" "materialInfo6.m";
+connectAttr "Atlas_01_Mat.oc" "lambert6SG.ss";
+connectAttr "|Base|group|pasted__bed_shell_grp|pasted__bed_grp|pasted__bed_pillow|pasted__bed_pillowShape.iog" "lambert6SG.dsm"
+		 -na;
+connectAttr "|Base|group|pasted__bed_shell_grp|pasted__bed_grp|pasted__bed_mattress|pasted__bed_mattressShape.iog" "lambert6SG.dsm"
+		 -na;
+connectAttr "|Base|group|pasted__bed_shell_grp|pasted__bed_grp|pasted__bed_blanket|pasted__bed_blanketShape.iog" "lambert6SG.dsm"
+		 -na;
+connectAttr "|Base|group|pasted__bed_shell_grp|pasted__bed_shell|pasted__bed_shellShape.iog" "lambert6SG.dsm"
+		 -na;
+connectAttr "BarracksLockers:SmallPannel4Shape.iog" "lambert6SG.dsm" -na;
+connectAttr "BarracksLockers:SmallPannel_Mocup4Shape.iog" "lambert6SG.dsm" -na;
+connectAttr "BarracksLockers:LockerBase2Shape.iog" "lambert6SG.dsm" -na;
+connectAttr "BarracksLockers:Top2Shape.iog" "lambert6SG.dsm" -na;
+connectAttr "BarracksLockers:pCubeShape3.iog" "lambert6SG.dsm" -na;
+connectAttr "lambert6SG.msg" "materialInfo7.sg";
+connectAttr "Atlas_01_Mat.msg" "materialInfo7.m";
 connectAttr "BunksHousingSG.pa" ":renderPartition.st" -na;
 connectAttr "LadderPegsSG.pa" ":renderPartition.st" -na;
 connectAttr "lambert2SG.pa" ":renderPartition.st" -na;
 connectAttr "lambert3SG.pa" ":renderPartition.st" -na;
 connectAttr "lambert4SG.pa" ":renderPartition.st" -na;
 connectAttr "lambert5SG.pa" ":renderPartition.st" -na;
+connectAttr "lambert6SG.pa" ":renderPartition.st" -na;
 connectAttr "MaterialFBXASC046001.msg" ":defaultShaderList1.s" -na;
 connectAttr "Material.msg" ":defaultShaderList1.s" -na;
 connectAttr "ID_Red.msg" ":defaultShaderList1.s" -na;
 connectAttr "ID_Blue.msg" ":defaultShaderList1.s" -na;
 connectAttr "ID_Yellow.msg" ":defaultShaderList1.s" -na;
 connectAttr "ID_Green.msg" ":defaultShaderList1.s" -na;
+connectAttr "Atlas_01_Mat.msg" ":defaultShaderList1.s" -na;
 connectAttr "defaultRenderLayer.msg" ":defaultRenderingList1.r" -na;
-connectAttr "|Base|group|pasted__bed_shell_grp|pasted__bed_grp|pasted__bed_pillow|pasted__bed_pillowShape.iog" ":initialShadingGroup.dsm"
-		 -na;
-connectAttr "|Base|group|pasted__bed_shell_grp|pasted__bed_grp|pasted__bed_mattress|pasted__bed_mattressShape.iog" ":initialShadingGroup.dsm"
-		 -na;
-connectAttr "|Base|group|pasted__bed_shell_grp|pasted__bed_grp|pasted__bed_blanket|pasted__bed_blanketShape.iog" ":initialShadingGroup.dsm"
-		 -na;
-connectAttr "|Base|group|pasted__bed_shell_grp|pasted__bed_shell|pasted__bed_shellShape.iog" ":initialShadingGroup.dsm"
-		 -na;
-connectAttr "BarracksLockers:Top2Shape.iog" ":initialShadingGroup.dsm" -na;
-connectAttr "BarracksLockers:pCubeShape3.iog" ":initialShadingGroup.dsm" -na;
-connectAttr "BarracksLockers:LockerBase2Shape.iog" ":initialShadingGroup.dsm" -na
-		;
-connectAttr "BarracksLockers:SmallPannel4Shape.iog" ":initialShadingGroup.dsm" -na
-		;
-connectAttr "BarracksLockers:SmallPannel_Mocup4Shape.iog" ":initialShadingGroup.dsm"
-		 -na;
 connectAttr "|Bake|group|pasted__bed_shell_grp|pasted__bed_shell|pasted__bed_shellShape.iog" ":initialShadingGroup.dsm"
 		 -na;
 connectAttr "|Bake|group|pasted__bed_shell_grp|pasted__bed_grp|pasted__bed_blanket|pasted__bed_blanketShape.iog" ":initialShadingGroup.dsm"
