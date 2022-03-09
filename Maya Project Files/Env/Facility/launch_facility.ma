@@ -1,36 +1,37 @@
 //Maya ASCII 2022 scene
 //Name: launch_facility.ma
-//Last modified: Tue, Mar 08, 2022 06:19:40 PM
+//Last modified: Wed, Mar 09, 2022 12:04:00 PM
 //Codeset: 1252
 requires maya "2022";
 requires "stereoCamera" "10.0";
 requires -nodeType "gameFbxExporter" "gameFbxExporter" "1.0";
 requires "mtoa" "4.2.1";
+requires "stereoCamera" "10.0";
 currentUnit -l meter -a degree -t ntsc;
 fileInfo "application" "maya";
 fileInfo "product" "Maya 2022";
 fileInfo "version" "2022";
 fileInfo "cutIdentifier" "202102181415-29bfc1879c";
 fileInfo "osv" "Windows 10 Home v2009 (Build: 19044)";
-fileInfo "UUID" "C6984D43-4AB1-49BE-FF82-898E108EE3D1";
+fileInfo "UUID" "24326B07-4E96-5DCB-2776-12AC7F66E1A8";
 fileInfo "license" "education";
 createNode transform -s -n "persp";
 	rename -uid "FAE3FC42-4FAD-43F6-CE26-59B4B0313015";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -10.912240406594229 33.506531860167804 -15.429365754212878 ;
-	setAttr ".r" -type "double3" -366.93835285762356 -3340.6000000016688 0 ;
+	setAttr ".t" -type "double3" -0.92905998044908988 37.594916971370665 34.156808598380081 ;
+	setAttr ".r" -type "double3" -387.93835285018605 -3613.4000000007345 -8.1739143432702335e-16 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "FBD3644E-42F2-AD35-6D51-E3B0BE6A3D2C";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
 	setAttr ".ncp" 1;
 	setAttr ".fd" 0.05;
-	setAttr ".coi" 11.590036631429873;
+	setAttr ".coi" 28.328180991053795;
 	setAttr ".ow" 0.1;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
-	setAttr ".tp" -type "double3" 0 3228.8745641708374 -373.88305366039276 ;
+	setAttr ".tp" -type "double3" 0 2349.2816686630249 907.92569518089294 ;
 	setAttr ".hc" -type "string" "viewSet -p %camera";
 	setAttr ".ai_translator" -type "string" "perspective";
 createNode transform -s -n "top";
@@ -2540,7 +2541,7 @@ createNode mesh -n "templateShape" -p "template";
 		 -0.0054284991 0.029524082 -0.011021507 -0.020426648 0.019524083 0.0060812547 -0.020426648 0.019524083 0.0080812555
 		 -0.00052664877 0.022624083 -0.008983383 7.7072385e-05 0.017524082 -0.0049711261 -0.0036266481 0.021124082 -0.0025691688
 		 -0.0054284991 0.029524082 -0.012071536 -0.005228499 0.029524082 -0.012071536 -0.0052285101 0.029524082 -0.011021537
-		 -0.0029229403 0.038124084 -0.01206917 -0.013964316 0.024324084 0.0028600425 -0.013120932 0.023124082 0.0028600425
+		 -0.0029229403 0.038124084 -0.01206917 -0.013964316 0.024324084 0.0028600425 -0.013120933 0.023124082 0.0028600425
 		 -0.013542623 0.023124082 0.0032817363 7.7072385e-05 0.017524082 -0.0047711255 -0.0054285 0.030524082 -0.012071536
 		 -0.0054285084 0.029524082 -0.011221507 -0.011017202 0.029524082 -0.0052171824 -0.0099565331 0.028524084 -0.0062778341
 		 -0.0099032251 0.028524084 -0.0062245252 -0.0099565331 0.029524082 -0.0062778341 -0.00012293816 0.038124084 -0.01206917
@@ -2567,7 +2568,7 @@ createNode mesh -n "templateShape" -p "template";
 		 -0.010589685 0.029524082 -0.0047317171 -0.011190715 0.030524082 -0.0050499127 -0.019428501 0.030524082 0.0030600422
 		 -0.0069284891 0.028524084 -0.008221508 -0.0069284891 0.029524082 -0.008221508 -0.0069284891 0.028524084 -0.0084215077
 		 -0.010963886 0.030524082 -0.0051638652 -0.019217299 0.030524082 0.0030600429 -0.019228501 0.029524082 0.0030600422
-		 -0.00094086287 0.022724083 -0.0045691691 -0.013120932 0.024324084 0.0028600418 -0.011862963 0.023124082 0.0028600418
+		 -0.00094086287 0.022724083 -0.0045691691 -0.013120933 0.024324084 0.0028600418 -0.011862963 0.023124082 0.0028600418
 		 -0.019428508 0.029524082 0.0045584948 -0.01087578 0.030524082 -0.0050757611 -0.019228501 0.030524082 0.003058495
 		 0.00047335148 0.017124083 -0.0011549544 -0.013385904 0.024324084 0.0034384567 -0.010731108 0.029524082 -0.0045902957
 		 -0.0016266489 0.022724083 -0.0032549547 -0.0069284891 0.029524082 -0.0084215077 -0.011049293 0.030524082 -0.0051913331
@@ -2652,7 +2653,7 @@ createNode mesh -n "templateShape" -p "template";
 		 -0.015100827 0.030974083 0.0028600425 -0.015413349 0.029524082 0.0031725639 -0.02002665 0.028524084 0.010081457
 		 -0.020026514 0.028524084 0.010081457 -0.015667299 0.030524082 0.0030600429 0.012073354 2.4082661e-05 0.01993083
 		 -0.01922665 0.023524083 0.014230832 0.00047335148 0.021124082 -0.0011549544 -0.02042651 0.030924084 0.0080814566
-		 -0.013120932 0.029524082 0.0028600425 -0.014423399 0.029524082 0.0041625141 -0.014427254 0.029524082 0.0041663684
+		 -0.013120933 0.029524082 0.0028600425 -0.014423399 0.029524082 0.0041625141 -0.014427254 0.029524082 0.0041663684
 		 -0.015417204 0.029524082 0.0031764198 -0.015554772 0.030524082 0.0033139873 -0.014270552 0.029524082 0.0043230774
 		 -0.01802665 0.024524083 0.010430831 -0.018222958 0.024524083 0.010430831 -0.020023007 0.024524083 0.014228868
 		 -0.020023007 0.023524083 0.014228867 -0.02002665 0.028124083 0.010430831 0.017173354 0.00042408227 0.014230833
@@ -2673,7 +2674,7 @@ createNode mesh -n "templateShape" -p "template";
 		 -0.014266703 0.029524082 0.0043192296 -0.014427257 0.029524082 0.0041663717 -0.014266695 0.029524082 0.0043192329
 		 -0.014408116 0.029524082 0.0041778106 -0.013090338 0.029524082 0.0028600418 -0.0087512555 0.029524082 -0.0011961651
 		 -0.012807491 0.029524082 0.0028600425 -0.0090340804 0.029524082 -0.0011961781 -0.009053248 0.030974083 -0.0012076485
-		 -0.013120932 0.030974083 0.0028600418 -0.014423399 0.030974083 0.0041625141 -0.018222958 0.024524083 0.013728878
+		 -0.013120933 0.030974083 0.0028600418 -0.014423399 0.030974083 0.0041625141 -0.018222958 0.024524083 0.013728878
 		 -0.018222982 0.023524083 0.014230832 -0.01922665 0.028124083 0.012938949 -0.0088926768 0.029524082 -0.0010547447
 		 -0.00889266 0.029524082 -0.0010547554 -0.020026514 0.030924084 0.010081457 -0.01922665 0.024524083 0.01422889
 		 -0.01922665 0.023524083 0.01422889 -0.00052664877 0.032324083 -0.011183384 -0.01440812 0.030524082 0.0041778125
@@ -3111,7 +3112,7 @@ createNode mesh -n "templateShape" -p "template";
 		 0.011578147 0.029524082 0.0044961078 0.012564298 0.029524082 0.0032271338 0.012850951 0.029524082 0.0029404813
 		 0.012705718 0.029524082 0.0033685535 0.017173484 0.019524083 0.010181465 0.012871965 0.029524082 0.0029614954
 		 0.012871965 0.029524082 0.002961498 0.012871965 0.029524082 0.0029300314 0.012992371 0.029524082 0.0030819036
-		 0.011598166 0.029524082 0.0042332369 0.011719597 0.029524082 0.0043546637 0.011594333 0.029524082 0.0042370702
+		 0.011598166 0.029524082 0.0042332369 0.011719598 0.029524082 0.0043546637 0.011594333 0.029524082 0.0042370702
 		 0.012584285 0.029524082 0.0032471204 0.011574334 0.030524082 0.0042170705 0.012871965 0.029524082 0.0031300313
 		 0.011715761 0.029524082 0.0043584974 0.013144246 0.029524082 0.0029300314 0.012871965 0.029524082 0.0032023077
 		 0.012944244 0.029524082 0.0031300313 0.012077013 0.023134043 0.014938896 0.012564288 0.030974083 0.0032271266
@@ -3119,7 +3120,7 @@ createNode mesh -n "templateShape" -p "template";
 		 0.01209704 0.024134072 0.012938878 0.017103165 0.024324084 0.0053665536 0.017103165 0.023124082 0.0053665536
 		 0.011574334 0.030974083 0.0042170696 0.017135922 0.024124084 0.0051142857 0.016321965 0.023124082 0.0074665523
 		 0.013671964 0.029524082 0.0029300314 0.017573483 0.019524083 0.010181468 0.011578147 0.030524082 0.0044961078
-		 0.011578165 0.030974083 0.0042132363 0.011719597 0.030524082 0.0043546641 0.012871965 0.030524082 0.0032023073
+		 0.011578165 0.030974083 0.0042132363 0.011719598 0.030524082 0.0043546641 0.012871965 0.030524082 0.0032023073
 		 0.012073349 0.038124084 -0.0062691714 0.012564296 0.030524082 0.0032271326 0.012871965 0.030524082 0.002961498
 		 0.013671964 0.029524082 0.0031300313 0.016321965 0.026924083 0.004114286 0.017135922 0.026924083 0.004114286
 		 0.011436728 0.030524082 0.004354686 0.012944244 0.030524082 0.0031300313 0.013471962 0.029524082 0.0031300313
@@ -16113,7 +16114,7 @@ createNode mesh -n "facility_platform_02_geoShape" -p "facility_platform_02_geo"
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
-	setAttr -s 29 ".pt";
+	setAttr -s 25 ".pt";
 	setAttr ".pt[2]" -type "float3" 0 -0.00020531705 0 ;
 	setAttr ".pt[3]" -type "float3" 0 -0.00020531705 0 ;
 	setAttr ".pt[4]" -type "float3" 0 -0.00020531705 0 ;
@@ -16895,7 +16896,7 @@ createNode mesh -n "facility_observatory_geoShape" -p "facility_observatory_geo"
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
-	setAttr -s 60 ".pt";
+	setAttr -s 58 ".pt";
 	setAttr ".pt[0]" -type "float3" 0.00071238028 -0.00030086903 0.00010952277 ;
 	setAttr ".pt[1]" -type "float3" 0.00071616552 -0.00021320091 0.00010952277 ;
 	setAttr ".pt[2]" -type "float3" 0.00071169698 -0.00021322412 0 ;
@@ -17470,9 +17471,10 @@ createNode transform -n "Facility_walkway_grp" -p "facility_grp";
 createNode transform -n "facility_walkway_frame_geo" -p "Facility_walkway_grp";
 	rename -uid "AA459CD8-45C8-C66A-FBF9-B8A6B495591F";
 	setAttr ".s" -type "double3" 1000 1000 1000 ;
-createNode mesh -n "facility_walkway_frame_geoShape" -p "facility_walkway_frame_geo";
-	rename -uid "3B83147C-4F32-BAC7-8C25-9080BE75FF50";
+createNode mesh -n "polySurfaceShape18" -p "facility_walkway_frame_geo";
+	rename -uid "A44AD8D8-4A74-6068-6FF5-A99690B4CA4F";
 	setAttr -k off ".v";
+	setAttr ".io" yes;
 	setAttr ".iog[0].og[0].gcl" -type "componentList" 1 "f[0:411]";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -18792,6 +18794,73 @@ createNode mesh -n "facility_walkway_frame_geoShape" -p "facility_walkway_frame_
 		152 0 
 		153 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
+	setAttr ".ai_translator" -type "string" "polymesh";
+createNode transform -n "polySurface1" -p "facility_walkway_frame_geo";
+	rename -uid "4C619407-4CD9-DA77-BC46-B7BE7AEBF4F4";
+createNode mesh -n "polySurfaceShape19" -p "polySurface1";
+	rename -uid "EDFC8BB4-47D0-30D6-E8A2-8FBF1AFE7621";
+	setAttr -k off ".v";
+	setAttr -s 2 ".iog[0].og";
+	setAttr ".vir" yes;
+	setAttr ".vif" yes;
+	setAttr ".uvst[0].uvsn" -type "string" "map1";
+	setAttr ".cuvs" -type "string" "map1";
+	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".covm[0]"  0 1 1;
+	setAttr ".cdvm[0]"  0 1 1;
+	setAttr ".ai_translator" -type "string" "polymesh";
+createNode transform -n "polySurface2" -p "facility_walkway_frame_geo";
+	rename -uid "58DDE87D-4E4E-6FAE-2535-8791CA87A728";
+createNode transform -n "transform3" -p "polySurface2";
+	rename -uid "509679F7-4D22-CAE5-504B-14A9A6DC5E15";
+	setAttr ".v" no;
+createNode mesh -n "polySurfaceShape20" -p "transform3";
+	rename -uid "18B2065C-434C-BF18-5D1F-9FBA09CEFD6B";
+	setAttr -k off ".v";
+	setAttr ".io" yes;
+	setAttr -s 2 ".iog[0].og";
+	setAttr ".vir" yes;
+	setAttr ".vif" yes;
+	setAttr ".uvst[0].uvsn" -type "string" "map1";
+	setAttr ".cuvs" -type "string" "map1";
+	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".covm[0]"  0 1 1;
+	setAttr ".cdvm[0]"  0 1 1;
+	setAttr ".ai_translator" -type "string" "polymesh";
+createNode transform -n "polySurface3" -p "facility_walkway_frame_geo";
+	rename -uid "B7EA5432-4617-A50A-DF01-929240B00065";
+createNode transform -n "transform2" -p "polySurface3";
+	rename -uid "5168D0B6-4331-B0BF-3300-3283832DD63F";
+	setAttr ".v" no;
+createNode mesh -n "polySurfaceShape21" -p "transform2";
+	rename -uid "8BC277AA-4D51-6533-C8A8-C1ACFF01837F";
+	setAttr -k off ".v";
+	setAttr ".io" yes;
+	setAttr -s 2 ".iog[0].og";
+	setAttr ".vir" yes;
+	setAttr ".vif" yes;
+	setAttr ".uvst[0].uvsn" -type "string" "map1";
+	setAttr ".cuvs" -type "string" "map1";
+	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".covm[0]"  0 1 1;
+	setAttr ".cdvm[0]"  0 1 1;
+	setAttr ".ai_translator" -type "string" "polymesh";
+createNode transform -n "transform1" -p "facility_walkway_frame_geo";
+	rename -uid "D304DBA9-4B14-0C90-A9DD-ED9BCEE0037B";
+	setAttr ".v" no;
+createNode mesh -n "facility_walkway_frame_geoShape" -p "transform1";
+	rename -uid "3B83147C-4F32-BAC7-8C25-9080BE75FF50";
+	setAttr -k off ".v";
+	setAttr ".io" yes;
+	setAttr -s 2 ".iog[0].og";
+	setAttr ".vir" yes;
+	setAttr ".vif" yes;
+	setAttr ".pv" -type "double2" 0.5 0.875 ;
+	setAttr ".uvst[0].uvsn" -type "string" "map1";
+	setAttr ".cuvs" -type "string" "map1";
+	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".covm[0]"  0 1 1;
+	setAttr ".cdvm[0]"  0 1 1;
 	setAttr ".ai_translator" -type "string" "polymesh";
 createNode transform -n "facility_walkway_mesh_geo" -p "Facility_walkway_grp";
 	rename -uid "0841CEC7-429A-0374-9945-ECBED83B93D5";
@@ -20196,6 +20265,22 @@ createNode mesh -n "polySurfaceShape7" -p "facility_wall_geo";
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
+	setAttr ".ai_translator" -type "string" "polymesh";
+createNode transform -n "railling_temp" -p "facility_grp";
+	rename -uid "7EE6F354-4F46-12E0-B172-8FA8F67AD887";
+	setAttr ".rp" -type "double3" 0 23.575495481491089 9.0792572498321533 ;
+	setAttr ".sp" -type "double3" 0 23.575495481491089 9.0792572498321533 ;
+createNode mesh -n "railling_tempShape" -p "railling_temp";
+	rename -uid "67A5911F-4A2D-E8F9-A9A4-FB858BC87E06";
+	setAttr -k off ".v";
+	setAttr -s 2 ".iog[0].og";
+	setAttr ".vir" yes;
+	setAttr ".vif" yes;
+	setAttr ".uvst[0].uvsn" -type "string" "map1";
+	setAttr ".cuvs" -type "string" "map1";
+	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".covm[0]"  0 1 1;
+	setAttr ".cdvm[0]"  0 1 1;
 	setAttr ".ai_translator" -type "string" "polymesh";
 createNode transform -n "visionary";
 	rename -uid "0EC1F15B-4A32-3A6C-E3AE-049A2DEC60D6";
@@ -21796,22 +21881,22 @@ createNode camera -n "backShape" -p "back";
 	setAttr ".o" yes;
 	setAttr ".ai_translator" -type "string" "orthographic";
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "A8A22578-4EC0-36B2-85A9-C78F7FAD9FFD";
+	rename -uid "D11BD564-48A5-3F3F-AE1D-F09C741AFC0C";
 	setAttr -s 11 ".lnk";
 	setAttr -s 11 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "C756ECB1-4B1F-F636-E779-BDB1D2D51C6B";
+	rename -uid "E2B7561D-4586-DD9C-1E35-48841181B5A4";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "F994DDFD-4C0F-891B-41C4-4689E4B4A995";
+	rename -uid "9F06C580-4DE7-47E9-B93D-D8B11A0113E6";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "C6FE0A66-492C-0EC3-98FA-3C94C35E9B90";
+	rename -uid "82F620A5-48A8-E483-87A6-CEB159667E19";
 	setAttr ".cdl" 2;
 	setAttr -s 3 ".dli[1:2]"  1 2;
 	setAttr -s 3 ".dli";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "FE763D25-4DC2-B40A-767E-B6B64B885438";
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "998FBDF3-4F8A-F547-7415-649D1179856A";
+	rename -uid "446CD482-4FB6-0D47-0792-928135A95073";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "79875268-46BA-57AF-58A8-ACAFF2D947EF";
 	setAttr ".g" yes;
@@ -21991,9 +22076,6 @@ createNode nodeGraphEditorInfo -n "hyperShadePrimaryNodeEditorSavedTabsInfo";
 createNode displayLayer -n "layer2";
 	rename -uid "9B86EA87-436E-217B-4173-1C83A899F8E6";
 	setAttr ".do" 2;
-createNode groupId -n "groupId98";
-	rename -uid "D4F58460-4270-FE89-B99F-558212BBC457";
-	setAttr ".ihi" 0;
 createNode groupId -n "groupId99";
 	rename -uid "D72B24B4-43EE-65E7-1735-D6AC00CBA56B";
 	setAttr ".ihi" 0;
@@ -22249,6 +22331,56 @@ createNode polyDelEdge -n "polyDelEdge2";
 	rename -uid "66C41088-4419-AA32-376E-FD93CE7BCABA";
 	setAttr ".ics" -type "componentList" 8 "e[124]" "e[126]" "e[131]" "e[133]" "e[153]" "e[155]" "e[159]" "e[161]";
 	setAttr ".cv" yes;
+createNode polyChipOff -n "polyChipOff1";
+	rename -uid "7BD8CE70-4220-8CFE-4B78-5EA96870035E";
+	setAttr ".ics" -type "componentList" 36 "f[15:18]" "f[21:22]" "f[25:28]" "f[56:57]" "f[63:64]" "f[74:75]" "f[81:82]" "f[91]" "f[94]" "f[101:104]" "f[117:165]" "f[167]" "f[169:171]" "f[175:177]" "f[180:181]" "f[186:189]" "f[191:193]" "f[198:200]" "f[221:224]" "f[227:228]" "f[231:234]" "f[262:263]" "f[269:270]" "f[280:281]" "f[287:288]" "f[297]" "f[300]" "f[307:310]" "f[323:371]" "f[373]" "f[375:377]" "f[381:383]" "f[386:387]" "f[392:395]" "f[397:399]" "f[404:406]";
+	setAttr ".ix" -type "matrix" 1000 0 0 0 0 1000 0 0 0 0 1000 0 0 0 0 1;
+	setAttr ".ws" yes;
+	setAttr ".rs" 37830;
+	setAttr ".dup" no;
+createNode groupId -n "groupId102";
+	rename -uid "462450DF-4157-7DBE-A2DC-F18E8749F167";
+	setAttr ".ihi" 0;
+createNode groupParts -n "groupParts3";
+	rename -uid "3990C1B4-48BB-A5EB-A20D-DF908E166457";
+	setAttr ".ihi" 0;
+	setAttr ".ic" -type "componentList" 1 "f[0:411]";
+createNode polySeparate -n "polySeparate1";
+	rename -uid "82C06FF3-4F3D-ABFA-96BE-A682AF6888C2";
+	setAttr ".ic" 3;
+	setAttr -s 3 ".out";
+createNode groupId -n "groupId103";
+	rename -uid "E41587BF-4780-9B95-D1B2-21B7A5F79B2C";
+	setAttr ".ihi" 0;
+createNode groupParts -n "groupParts4";
+	rename -uid "8EE8CEC7-4BC5-D5C9-DFCA-87B6B507B75F";
+	setAttr ".ihi" 0;
+	setAttr ".ic" -type "componentList" 228 "f[0]" "f[1]" "f[2]" "f[3]" "f[4]" "f[5]" "f[6]" "f[7]" "f[8]" "f[9]" "f[10]" "f[11]" "f[12]" "f[13]" "f[14]" "f[15]" "f[16]" "f[17]" "f[18]" "f[19]" "f[20]" "f[21]" "f[22]" "f[23]" "f[24]" "f[25]" "f[26]" "f[27]" "f[28]" "f[29]" "f[30]" "f[31]" "f[32]" "f[33]" "f[34]" "f[35]" "f[36]" "f[37]" "f[38]" "f[39]" "f[40]" "f[41]" "f[42]" "f[43]" "f[44]" "f[45]" "f[46]" "f[47]" "f[48]" "f[49]" "f[50]" "f[51]" "f[52]" "f[53]" "f[54]" "f[55]" "f[56]" "f[57]" "f[58]" "f[59]" "f[60]" "f[61]" "f[62]" "f[63]" "f[64]" "f[65]" "f[66]" "f[67]" "f[68]" "f[69]" "f[70]" "f[71]" "f[72]" "f[73]" "f[74]" "f[75]" "f[76]" "f[77]" "f[78]" "f[79]" "f[80]" "f[81]" "f[82]" "f[83]" "f[84]" "f[85]" "f[86]" "f[87]" "f[88]" "f[89]" "f[90]" "f[91]" "f[92]" "f[93]" "f[94]" "f[95]" "f[96]" "f[97]" "f[98]" "f[99]" "f[100]" "f[101]" "f[102]" "f[103]" "f[104]" "f[105]" "f[106]" "f[107]" "f[108]" "f[109]" "f[110]" "f[111]" "f[112]" "f[113]" "f[114]" "f[115]" "f[116]" "f[117]" "f[118]" "f[119]" "f[120]" "f[121]" "f[122]" "f[123]" "f[124]" "f[125]" "f[126]" "f[127]" "f[128]" "f[129]" "f[130]" "f[131]" "f[132]" "f[133]" "f[134]" "f[135]" "f[136]" "f[137]" "f[138]" "f[139]" "f[140]" "f[141]" "f[142]" "f[143]" "f[144]" "f[145]" "f[146]" "f[147]" "f[148]" "f[149]" "f[150]" "f[151]" "f[152]" "f[153]" "f[154]" "f[155]" "f[156]" "f[157]" "f[158]" "f[159]" "f[160]" "f[161]" "f[162]" "f[163]" "f[164]" "f[165]" "f[166]" "f[167]" "f[168]" "f[169]" "f[170]" "f[171]" "f[172]" "f[173]" "f[174]" "f[175]" "f[176]" "f[177]" "f[178]" "f[179]" "f[180]" "f[181]" "f[182]" "f[183]" "f[184]" "f[185]" "f[186]" "f[187]" "f[188]" "f[189]" "f[190]" "f[191]" "f[192]" "f[193]" "f[194]" "f[195]" "f[196]" "f[197]" "f[198]" "f[199]" "f[200]" "f[201]" "f[202]" "f[203]" "f[204]" "f[205]" "f[206]" "f[207]" "f[208]" "f[209]" "f[210]" "f[211]" "f[212]" "f[213]" "f[214]" "f[215]" "f[216]" "f[217]" "f[218]" "f[219]" "f[220]" "f[221]" "f[222]" "f[223]" "f[224]" "f[225]" "f[226]" "f[227]";
+createNode groupId -n "groupId104";
+	rename -uid "81838101-43FA-8934-2962-A0813094E754";
+	setAttr ".ihi" 0;
+createNode groupParts -n "groupParts5";
+	rename -uid "B1E66EFE-4674-56E0-AD0C-BBBA39B2D6F1";
+	setAttr ".ihi" 0;
+	setAttr ".ic" -type "componentList" 68 "f[0]" "f[1]" "f[2]" "f[3]" "f[4]" "f[5]" "f[6]" "f[7]" "f[8]" "f[9]" "f[10]" "f[11]" "f[12]" "f[13]" "f[14]" "f[15]" "f[16]" "f[17]" "f[18]" "f[19]" "f[20]" "f[21]" "f[22]" "f[23]" "f[24]" "f[25]" "f[26]" "f[27]" "f[28]" "f[29]" "f[30]" "f[31]" "f[32]" "f[33]" "f[34]" "f[35]" "f[36]" "f[37]" "f[38]" "f[39]" "f[40]" "f[41]" "f[42]" "f[43]" "f[44]" "f[45]" "f[46]" "f[47]" "f[48]" "f[49]" "f[50]" "f[51]" "f[52]" "f[53]" "f[54]" "f[55]" "f[56]" "f[57]" "f[58]" "f[59]" "f[60]" "f[61]" "f[62]" "f[63]" "f[64]" "f[65]" "f[66]" "f[67]";
+createNode groupId -n "groupId105";
+	rename -uid "AC8C1237-472F-F023-0F7B-B4B0746B2153";
+	setAttr ".ihi" 0;
+createNode groupParts -n "groupParts6";
+	rename -uid "FFB41BB4-4DE0-F255-0777-4A9AF144910A";
+	setAttr ".ihi" 0;
+	setAttr ".ic" -type "componentList" 116 "f[0]" "f[1]" "f[2]" "f[3]" "f[4]" "f[5]" "f[6]" "f[7]" "f[8]" "f[9]" "f[10]" "f[11]" "f[12]" "f[13]" "f[14]" "f[15]" "f[16]" "f[17]" "f[18]" "f[19]" "f[20]" "f[21]" "f[22]" "f[23]" "f[24]" "f[25]" "f[26]" "f[27]" "f[28]" "f[29]" "f[30]" "f[31]" "f[32]" "f[33]" "f[34]" "f[35]" "f[36]" "f[37]" "f[38]" "f[39]" "f[40]" "f[41]" "f[42]" "f[43]" "f[44]" "f[45]" "f[46]" "f[47]" "f[48]" "f[49]" "f[50]" "f[51]" "f[52]" "f[53]" "f[54]" "f[55]" "f[56]" "f[57]" "f[58]" "f[59]" "f[60]" "f[61]" "f[62]" "f[63]" "f[64]" "f[65]" "f[66]" "f[67]" "f[68]" "f[69]" "f[70]" "f[71]" "f[72]" "f[73]" "f[74]" "f[75]" "f[76]" "f[77]" "f[78]" "f[79]" "f[80]" "f[81]" "f[82]" "f[83]" "f[84]" "f[85]" "f[86]" "f[87]" "f[88]" "f[89]" "f[90]" "f[91]" "f[92]" "f[93]" "f[94]" "f[95]" "f[96]" "f[97]" "f[98]" "f[99]" "f[100]" "f[101]" "f[102]" "f[103]" "f[104]" "f[105]" "f[106]" "f[107]" "f[108]" "f[109]" "f[110]" "f[111]" "f[112]" "f[113]" "f[114]" "f[115]";
+createNode polyUnite -n "polyUnite1";
+	rename -uid "539BF810-476B-900A-D555-FB95C280C950";
+	setAttr -s 2 ".ip";
+	setAttr -s 2 ".im";
+createNode groupId -n "groupId106";
+	rename -uid "0776C707-4A62-0935-4427-51A3A0951E6C";
+	setAttr ".ihi" 0;
+createNode groupParts -n "groupParts7";
+	rename -uid "32283B78-4578-D825-3B93-B5A394F7B0C7";
+	setAttr ".ihi" 0;
+	setAttr ".ic" -type "componentList" 1 "f[0:183]";
 select -ne :time1;
 	setAttr ".o" 0;
 select -ne :hardwareRenderingGlobals;
@@ -22266,9 +22398,9 @@ select -ne :postProcessList1;
 	setAttr -s 2 ".p";
 select -ne :defaultRenderingList1;
 select -ne :initialShadingGroup;
-	setAttr -s 22 ".dsm";
+	setAttr -s 26 ".dsm";
 	setAttr ".ro" yes;
-	setAttr -s 3 ".gn";
+	setAttr -s 7 ".gn";
 select -ne :initialParticleSE;
 	setAttr ".ro" yes;
 select -ne :defaultRenderGlobals;
@@ -22296,9 +22428,19 @@ connectAttr "groupId101.id" "facility_glass_observatory_geoShape.iog.og[1].gid";
 connectAttr "phong1SG.mwc" "facility_glass_observatory_geoShape.iog.og[1].gco";
 connectAttr "polySubdFace6.out" "facility_glass_observatory_geoShape.i";
 connectAttr "polySubdFace2.out" "facility_floor_noHole_geoShape.i";
-connectAttr "groupId98.id" "facility_walkway_frame_geoShape.iog.og[0].gid";
+connectAttr "groupParts4.og" "polySurfaceShape19.i";
+connectAttr "groupId103.id" "polySurfaceShape19.iog.og[0].gid";
+connectAttr ":initialShadingGroup.mwc" "polySurfaceShape19.iog.og[0].gco";
+connectAttr "groupParts5.og" "polySurfaceShape20.i";
+connectAttr "groupId104.id" "polySurfaceShape20.iog.og[0].gid";
+connectAttr ":initialShadingGroup.mwc" "polySurfaceShape20.iog.og[0].gco";
+connectAttr "groupParts6.og" "polySurfaceShape21.i";
+connectAttr "groupId105.id" "polySurfaceShape21.iog.og[0].gid";
+connectAttr ":initialShadingGroup.mwc" "polySurfaceShape21.iog.og[0].gco";
+connectAttr "groupId102.id" "facility_walkway_frame_geoShape.iog.og[0].gid";
 connectAttr ":initialShadingGroup.mwc" "facility_walkway_frame_geoShape.iog.og[0].gco"
 		;
+connectAttr "polyChipOff1.out" "facility_walkway_frame_geoShape.i";
 connectAttr "groupId99.id" "facility_walkway_mesh_geoShape.iog.og[0].gid";
 connectAttr ":initialShadingGroup.mwc" "facility_walkway_mesh_geoShape.iog.og[0].gco"
 		;
@@ -22308,6 +22450,9 @@ connectAttr "polySubdFace12.out" "facility_pillar_03_geoShape.i";
 connectAttr "groupId100.id" "facility_wall_geoShape.iog.og[0].gid";
 connectAttr ":initialShadingGroup.mwc" "facility_wall_geoShape.iog.og[0].gco";
 connectAttr "polyMergeVert1.out" "facility_wall_geoShape.i";
+connectAttr "groupParts7.og" "railling_tempShape.i";
+connectAttr "groupId106.id" "railling_tempShape.iog.og[0].gid";
+connectAttr ":initialShadingGroup.mwc" "railling_tempShape.iog.og[0].gco";
 relationship "link" ":lightLinker1" ":initialShadingGroup.message" ":defaultLightSet.message";
 relationship "link" ":lightLinker1" ":initialParticleSE.message" ":defaultLightSet.message";
 relationship "link" ":lightLinker1" "Cylinder_Brush3_StaticMeshSG.message" ":defaultLightSet.message";
@@ -22408,6 +22553,23 @@ connectAttr "facility_wall_geoShape.wm" "polyMergeVert1.mp";
 connectAttr "polySubdFace9.out" "deleteComponent2.ig";
 connectAttr "deleteComponent2.og" "polyDelEdge1.ip";
 connectAttr "polySubdFace7.out" "polyDelEdge2.ip";
+connectAttr "groupParts3.og" "polyChipOff1.ip";
+connectAttr "facility_walkway_frame_geoShape.wm" "polyChipOff1.mp";
+connectAttr "polySurfaceShape18.o" "groupParts3.ig";
+connectAttr "groupId102.id" "groupParts3.gi";
+connectAttr "facility_walkway_frame_geoShape.o" "polySeparate1.ip";
+connectAttr "polySeparate1.out[0]" "groupParts4.ig";
+connectAttr "groupId103.id" "groupParts4.gi";
+connectAttr "polySeparate1.out[1]" "groupParts5.ig";
+connectAttr "groupId104.id" "groupParts5.gi";
+connectAttr "polySeparate1.out[2]" "groupParts6.ig";
+connectAttr "groupId105.id" "groupParts6.gi";
+connectAttr "polySurfaceShape20.o" "polyUnite1.ip[0]";
+connectAttr "polySurfaceShape21.o" "polyUnite1.ip[1]";
+connectAttr "polySurfaceShape20.wm" "polyUnite1.im[0]";
+connectAttr "polySurfaceShape21.wm" "polyUnite1.im[1]";
+connectAttr "polyUnite1.out" "groupParts7.ig";
+connectAttr "groupId106.id" "groupParts7.gi";
 connectAttr "Cylinder_Brush3_StaticMeshSG.pa" ":renderPartition.st" -na;
 connectAttr "Cylinder_Brush3_StaticMeshSG1.pa" ":renderPartition.st" -na;
 connectAttr "Cylinder_Brush3_StaticMeshSG2.pa" ":renderPartition.st" -na;
@@ -22448,12 +22610,20 @@ connectAttr "facility_pillar_03_geoShape.iog" ":initialShadingGroup.dsm" -na;
 connectAttr "pCylinderShape12.iog" ":initialShadingGroup.dsm" -na;
 connectAttr "pCylinderShape11.iog" ":initialShadingGroup.dsm" -na;
 connectAttr "pCylinderShape13.iog" ":initialShadingGroup.dsm" -na;
-connectAttr "facility_walkway_frame_geoShape.iog.og[0]" ":initialShadingGroup.dsm"
-		 -na;
 connectAttr "facility_walkway_mesh_geoShape.iog.og[0]" ":initialShadingGroup.dsm"
 		 -na;
 connectAttr "facility_wall_geoShape.iog.og[0]" ":initialShadingGroup.dsm" -na;
-connectAttr "groupId98.msg" ":initialShadingGroup.gn" -na;
+connectAttr "facility_walkway_frame_geoShape.iog.og[0]" ":initialShadingGroup.dsm"
+		 -na;
+connectAttr "polySurfaceShape19.iog.og[0]" ":initialShadingGroup.dsm" -na;
+connectAttr "polySurfaceShape20.iog.og[0]" ":initialShadingGroup.dsm" -na;
+connectAttr "polySurfaceShape21.iog.og[0]" ":initialShadingGroup.dsm" -na;
+connectAttr "railling_tempShape.iog.og[0]" ":initialShadingGroup.dsm" -na;
 connectAttr "groupId99.msg" ":initialShadingGroup.gn" -na;
 connectAttr "groupId100.msg" ":initialShadingGroup.gn" -na;
+connectAttr "groupId102.msg" ":initialShadingGroup.gn" -na;
+connectAttr "groupId103.msg" ":initialShadingGroup.gn" -na;
+connectAttr "groupId104.msg" ":initialShadingGroup.gn" -na;
+connectAttr "groupId105.msg" ":initialShadingGroup.gn" -na;
+connectAttr "groupId106.msg" ":initialShadingGroup.gn" -na;
 // End of launch_facility.ma
