@@ -1,6 +1,6 @@
 //Maya ASCII 2022 scene
 //Name: Sink.ma
-//Last modified: Tue, Mar 15, 2022 05:33:40 PM
+//Last modified: Tue, Mar 15, 2022 05:34:32 PM
 //Codeset: 1252
 requires maya "2022";
 requires "stereoCamera" "10.0";
@@ -12,12 +12,12 @@ fileInfo "product" "Maya 2022";
 fileInfo "version" "2022";
 fileInfo "cutIdentifier" "202106180615-26a94e7f8c";
 fileInfo "osv" "Windows 10 Home v2009 (Build: 19043)";
-fileInfo "UUID" "0E92DB12-47A1-2C37-0154-A0BC8B6AF4A3";
+fileInfo "UUID" "BD2CB348-4CD8-64BA-57BB-59893BBD23EE";
 createNode transform -s -n "persp";
 	rename -uid "60BC4341-41EB-227C-DEA2-F5B54D463977";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -1.9754750998889921 0.3606518127379516 6.4037400524664214 ;
-	setAttr ".r" -type "double3" -5.7383526698944269 -17.799999999998473 -2.0877904737187768e-16 ;
+	setAttr ".t" -type "double3" -1.9521328090713841 2.3338690249363485 3.2110186498048137 ;
+	setAttr ".r" -type "double3" -26.738352669894848 -26.199999999998738 -1.7723739276000886e-15 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "62181045-4D78-B2CB-A8C8-3A9312C680AB";
 	setAttr -k off ".v" no;
@@ -25,7 +25,7 @@ createNode camera -s -n "perspShape" -p "persp";
 	setAttr ".ncp" 0.001;
 	setAttr ".fcp" 100;
 	setAttr ".fd" 0.05;
-	setAttr ".coi" 6.8913096724752574;
+	setAttr ".coi" 4.6881047919940571;
 	setAttr ".ow" 0.1;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
@@ -1030,7 +1030,7 @@ createNode bump2d -n "bump2d1";
 	setAttr ".vc1" -type "float3" 0 0.0001 0 ;
 	setAttr ".vc2" -type "float3" 9.9999997e-06 9.9999997e-06 0 ;
 createNode nodeGraphEditorInfo -n "hyperShadePrimaryNodeEditorSavedTabsInfo";
-	rename -uid "70178356-492F-54B8-63B1-E080B5D49A2A";
+	rename -uid "5774FA81-4E46-15D2-4C18-779599C87665";
 	setAttr ".tgi[0].tn" -type "string" "Untitled_1";
 	setAttr ".tgi[0].vl" -type "double2" -579.05128755650196 -556.34603048453812 ;
 	setAttr ".tgi[0].vh" -type "double2" 325.31446958705362 366.2729804729239 ;
