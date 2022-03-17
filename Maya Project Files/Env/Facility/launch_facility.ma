@@ -1,6 +1,6 @@
 //Maya ASCII 2022 scene
 //Name: launch_facility.ma
-//Last modified: Wed, Mar 16, 2022 06:05:35 PM
+//Last modified: Wed, Mar 16, 2022 06:13:12 PM
 //Codeset: 1252
 requires maya "2022";
 requires "stereoCamera" "10.0";
@@ -14,20 +14,20 @@ fileInfo "product" "Maya 2022";
 fileInfo "version" "2022";
 fileInfo "cutIdentifier" "202102181415-29bfc1879c";
 fileInfo "osv" "Windows 10 Home v2009 (Build: 19043)";
-fileInfo "UUID" "22D35D66-4CCC-54C2-AB2E-BF81448E5646";
+fileInfo "UUID" "4C7A68FD-42B0-46BB-0092-C2867441E84B";
 fileInfo "license" "education";
 createNode transform -s -n "persp";
 	rename -uid "FAE3FC42-4FAD-43F6-CE26-59B4B0313015";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -41.376724874891188 46.726108169948382 60.131391291086906 ;
-	setAttr ".r" -type "double3" -377.73835199694531 1050.999999999879 9.0912503328727525e-16 ;
+	setAttr ".t" -type "double3" 4.5424528160792184 77.704449440321341 38.59262163236253 ;
+	setAttr ".r" -type "double3" -413.13835199677891 1088.5999999998451 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "FBD3644E-42F2-AD35-6D51-E3B0BE6A3D2C";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
 	setAttr ".ncp" 1;
 	setAttr ".fd" 0.05;
-	setAttr ".coi" 75.327641036562298;
+	setAttr ".coi" 64.355549839172696;
 	setAttr ".ow" 0.1;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
@@ -15868,7 +15868,7 @@ createNode mesh -n "facility_platform_03_geoShape" -p "facility_platform_03_geo"
 	setAttr ".iog[0].og[1].gcl" -type "componentList" 10 "f[0]" "f[2]" "f[4:6]" "f[8]" "f[10:16]" "f[20:21]" "f[23:24]" "f[28:30]" "f[34]" "f[38:40]";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
-	setAttr ".pv" -type "double2" 0.50074031949043274 0.91018203051593616 ;
+	setAttr ".pv" -type "double2" 0.55121946334838867 0.6225990355014801 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr -s 112 ".uvst[0].uvsp[0:111]" -type "float2" 0.50066698 0.9953348
 		 0.5022375 0.38052857 0.294864 0.38056475 0.28624076 0.99537569 0.50074041 0.82620186
@@ -16089,7 +16089,7 @@ createNode mesh -n "facility_platform_02_geoShape" -p "facility_platform_02_geo"
 	setAttr ".iog[0].og[1].gcl" -type "componentList" 2 "f[0:6]" "f[9:17]";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
-	setAttr ".pv" -type "double2" 1.3194751222746763 0.83208712935447693 ;
+	setAttr ".pv" -type "double2" 0.68692958354949951 0.62181240320205688 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr -s 60 ".uvst[0].uvsp[0:59]" -type "float2" 1.31950474 0.6719178
 		 0.49824733 0.448535 0.70917523 0.44856733 1.52125895 0.67195451 0.25616837 0.67195463
@@ -16207,7 +16207,7 @@ createNode mesh -n "facility_platform_05_geoShape" -p "facility_platform_05_geo"
 	setAttr ".iog[0].og[1].gcl" -type "componentList" 7 "f[1]" "f[3]" "f[6]" "f[9:12]" "f[14:15]" "f[17:20]" "f[22:26]";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
-	setAttr ".pv" -type "double2" 0.52118994913394234 0.83424895110760255 ;
+	setAttr ".pv" -type "double2" 0.50198787450790405 0.6177964061498642 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr -s 80 ".uvst[0].uvsp[0:79]" -type "float2" 0.52119863 0.74416655
 		 0.5013923 0.25161952 0.74304056 0.25158006 0.70992362 0.74418473 0.48860091 0.91000593
@@ -16345,7 +16345,7 @@ createNode mesh -n "facility_platform_01_geoShape" -p "facility_platform_01_geo"
 	setAttr ".iog[0].og[1].gcl" -type "componentList" 4 "f[0]" "f[6]" "f[9]" "f[11:16]";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
-	setAttr ".pv" -type "double2" 0.5414239740281177 0.83579030467194937 ;
+	setAttr ".pv" -type "double2" 0.49706384539604187 0.62235721945762634 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr -s 57 ".uvst[0].uvsp[0:56]" -type "float2" 0.58980155 0.42353976
 		 0.74181521 0.42273867 0.54142016 0.90822136 0.8580699 0.90823698 0.4970724 0.42284155
@@ -16471,7 +16471,7 @@ createNode mesh -n "facility_floor_hole_geoShape" -p "facility_floor_hole_geo";
 	setAttr ".gtag[12].gtagcmp" -type "componentList" 2 "f[16:23]" "f[35]";
 	setAttr ".gtag[13].gtagnm" -type "string" "topRing";
 	setAttr ".gtag[13].gtagcmp" -type "componentList" 1 "e[8:15]";
-	setAttr ".pv" -type "double2" 0.68431616088602842 0.90454978856591362 ;
+	setAttr ".pv" -type "double2" 0.49666213989257812 0.84282186627388 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr -s 182 ".uvst[0].uvsp[0:181]" -type "float2" 0.29994395 0.99214649
 		 0.60054326 0.92377102 0.1065768 0.93724269 0.25187701 0.75131726 0.86675102 0.67527652
@@ -16784,7 +16784,7 @@ createNode mesh -n "facility_platform_04_geoShape" -p "facility_platform_04_geo"
 	setAttr ".iog[0].og[1].gcl" -type "componentList" 4 "f[0:3]" "f[7:10]" "f[20]" "f[35:45]";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
-	setAttr ".pv" -type "double2" 0.35729787055302947 0.78088936771062478 ;
+	setAttr ".pv" -type "double2" 0.64289209246635437 0.61913929879665375 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr -s 143 ".uvst[0].uvsp[0:142]" -type "float2" 0.76257271 0.87727189
 		 0.57157099 0.40528601 0.97628462 0.40523571 0.8674289 0.7464515 1.14521194 0.80508816
@@ -17045,7 +17045,7 @@ createNode mesh -n "facility_observatory_geoShape" -p "facility_observatory_geo"
 	setAttr ".gtag[4].gtagcmp" -type "componentList" 1 "f[4]";
 	setAttr ".gtag[5].gtagnm" -type "string" "top";
 	setAttr ".gtag[5].gtagcmp" -type "componentList" 1 "f[1]";
-	setAttr ".pv" -type "double2" 0.5012550211256771 0.61109248470566824 ;
+	setAttr ".pv" -type "double2" 0.49319881200790405 0.75000476837158203 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr -s 120 ".uvst[0].uvsp[0:119]" -type "float2" 0.65032679 0.61995524
 		 0.31319815 0.72520232 0.65436667 0.64367098 0.60765523 0.55793154 0.20135224 0.57698786
@@ -17256,7 +17256,7 @@ createNode mesh -n "facility_glass_observatory_geoShape" -p "facility_glass_obse
 	setAttr ".iog[0].og[1].gcl" -type "componentList" 1 "f[0:87]";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
-	setAttr ".pv" -type "double2" 0.49999998509883881 0.16249626502394676 ;
+	setAttr ".pv" -type "double2" 0.5 0.29226377606391907 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr -s 90 ".uvst[0].uvsp[0:89]" -type "float2" 0.53324997 0.14955886
 		 0.2634052 0.13320108 0.18218581 0.070990548 0.52813417 0.082621798 0.52456504 0.03592344
@@ -17560,7 +17560,7 @@ createNode mesh -n "facility_floor_noHole_geoShape" -p "facility_floor_noHole_ge
 	setAttr ".iog[0].og[1].gcl" -type "componentList" 23 "f[0:1]" "f[4]" "f[6]" "f[8]" "f[11:12]" "f[16:17]" "f[20]" "f[22:26]" "f[33]" "f[35]" "f[37]" "f[39:40]" "f[42:48]" "f[54]" "f[57:58]" "f[61:62]" "f[65:66]" "f[69:70]" "f[72:73]" "f[75:77]" "f[79]" "f[88]" "f[109]";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
-	setAttr ".pv" -type "double2" 0.48654896230868661 0.83936562512526747 ;
+	setAttr ".pv" -type "double2" 0.58561801910400391 0.83739244937896729 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr -s 278 ".uvst[0].uvsp";
 	setAttr ".uvst[0].uvsp[0:249]" -type "float2" 0.52770317 0.73062456 0.4070701
@@ -19344,7 +19344,7 @@ createNode mesh -n "polySurfaceShape19" -p "polySurface1";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
-	setAttr ".pv" -type "double2" 0.49634504318237305 0.1135919570649695 ;
+	setAttr ".pv" -type "double2" 0.45442855358123779 0.45677421987056732 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr -s 560 ".uvst[0].uvsp";
 	setAttr ".uvst[0].uvsp[0:249]" -type "float2" -1.15881348 0.81310463 0.27025416
@@ -20374,33 +20374,33 @@ createNode mesh -n "facility_walkway_mesh_geoShape" -p "facility_walkway_mesh_ge
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
-	setAttr ".pv" -type "double2" 0.088480878621339798 0.11100206151604652 ;
+	setAttr ".pv" -type "double2" 0.48861747235059738 0.20608779415488243 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
-	setAttr -s 47 ".uvst[0].uvsp[0:46]" -type "float2" 0.95337969 0.16290687
-		 0.8416822 0.051207926 0.85426009 0.020834859 0.97522384 0.14107341 0.68302238 0.020832561
-		 0.68302196 0.051205754 0.62702876 0.051204998 0.62702918 0.020831756 0.76305813 0.051206857
-		 0.7630586 0.020833613 0.51673269 0.051203486 0.51673317 0.020830246 0.68301958 0.22266597
-		 0.62702638 0.22266522 0.62702733 0.15743312 0.68302041 0.1574339 0.93190217 0.18438372
-		 0.82910436 0.081581041 0.76305765 0.08158014 0.68302149 0.081579082 0.62702835 0.081578322
-		 0.51673228 0.081576772 0.080082707 0.16289492 0.058239125 0.14106087 0.17920613 0.020825626
-		 0.19178325 0.051199038 0.35044387 0.020828005 0.40643704 0.020828733 0.40643662 0.051201981
-		 0.35044351 0.051201209 0.27040765 0.020826871 0.27040732 0.051200118 0.35044119 0.22266142
-		 0.35044211 0.15742935 0.40643525 0.1574301 0.40643433 0.2226622 0.10155964 0.18437235
-		 0.20436031 0.081572495 0.27040696 0.081573397 0.40643626 0.081575297 0.35044312 0.081574537
-		 0.91474199 0.080954134 0.89753091 0.1070574 0.8805033 0.13298237 0.15295997 0.13297242
-		 0.13593298 0.10704698 0.11872263 0.080943249;
+	setAttr -s 47 ".uvst[0].uvsp[0:46]" -type "float2" 0.92526567 0.24724886
+		 0.81356817 0.13554992 0.82614607 0.10517685 0.94710982 0.22541541 0.65490836 0.10517456
+		 0.65490794 0.13554776 0.59891474 0.135547 0.59891516 0.10517375 0.73494411 0.13554886
+		 0.73494458 0.10517561 0.4886187 0.13554548 0.48861918 0.10517224 0.65490556 0.30700797
+		 0.59891236 0.30700722 0.59891331 0.24177513 0.65490639 0.2417759 0.90378815 0.26872572
+		 0.80099034 0.16592303 0.73494363 0.16592214 0.65490746 0.16592108 0.59891433 0.16592032
+		 0.48861828 0.16591877 0.051968709 0.24723691 0.030125126 0.22540286 0.15109214 0.10516762
+		 0.16366926 0.13554104 0.32232988 0.10517 0.37832305 0.10517073 0.37832263 0.13554397
+		 0.32232952 0.1355432 0.24229366 0.10516886 0.24229333 0.13554211 0.3223272 0.30700341
+		 0.32232812 0.24177134 0.37832126 0.24177209 0.37832034 0.30700418 0.073445641 0.26871434
+		 0.17624632 0.16591449 0.24229297 0.1659154 0.37832227 0.16591729 0.32232913 0.16591653
+		 0.88662797 0.16529614 0.86941689 0.1913994 0.85238928 0.21732438 0.12484597 0.21731442
+		 0.10781898 0.19138896 0.090608634 0.16528524;
 	setAttr ".cuvs" -type "string" "map1";
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 47 ".pt[0:46]" -type "float3"  9.5732479 23.118843 11.205482 
-		7.2569256 23.118843 11.205482 0 23.118843 11.205482 3.2494025 23.118843 11.205482 
-		4.8990006 23.118841 11.205482 9.9437904 23.118841 12.199828 13.579885 23.118837 8.6304016 
-		12.863982 23.118837 7.9147949 3.2494035 23.118841 12.199828 4.899003 23.118841 12.199826 
-		7.256928 23.118841 12.199828 0 23.118841 12.199828 4.8989997 23.118843 6.1541395 
-		3.2494016 23.118837 6.1541395 3.2494016 23.118841 8.0759239 4.8989997 23.118843 8.0759239 
+		7.2569256 23.118843 11.205482 0 23.118843 11.205482 3.0455487 23.118843 11.205482 
+		5.0824714 23.118841 11.205482 9.9437904 23.118841 12.199828 13.579885 23.118837 8.6304016 
+		12.863982 23.118837 7.9147949 3.0455496 23.118841 12.199828 5.0824733 23.118841 12.199826 
+		7.256928 23.118841 12.199828 0 23.118841 12.199828 5.0824699 23.118843 5.9404063 
+		3.0455477 23.118837 5.9404063 3.0455477 23.118841 8.0759239 5.0824699 23.118843 8.0759239 
 		12.170847 23.118837 7.2216616 9.2027073 23.118843 10.21114 7.2569246 23.118843 10.21114 
-		0 23.118843 10.21114 3.2494018 23.118841 10.211139 4.8989997 23.118841 10.211139 
+		0 23.118843 10.21114 3.0455482 23.118841 10.211139 5.0824699 23.118841 10.211139 
 		-9.5732479 23.118843 11.205482 -7.2569256 23.118843 11.205482 -3.0455487 23.118843 
 		11.205482 -5.0824709 23.118841 11.205482 -9.9437904 23.118841 12.199828 -13.575637 
 		23.118837 8.6261511 -12.863982 23.118837 7.9147949 -3.0455496 23.118841 12.199828 
@@ -20505,7 +20505,7 @@ createNode mesh -n "facility_pillar_01_geoShape" -p "facility_pillar_01_geo";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
-	setAttr ".pv" -type "double2" 0.5 0.5 ;
+	setAttr ".pv" -type "double2" 0.5 0.62403464317321777 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr -s 78 ".uvst[0].uvsp[0:77]" -type "float2" 0.2098062 0.7407459
 		 0.20980412 0.70184743 0.20980197 0.66294909 0.20979983 0.62405074 0.20979768 0.58515215
@@ -20729,7 +20729,7 @@ createNode mesh -n "facility_pillar_02_geoShape" -p "facility_pillar_02_geo";
 	setAttr ".gtag[8].gtagcmp" -type "componentList" 1 "f[12:17]";
 	setAttr ".gtag[9].gtagnm" -type "string" "topRing";
 	setAttr ".gtag[9].gtagcmp" -type "componentList" 1 "e[6:11]";
-	setAttr ".pv" -type "double2" 0.5 0.5 ;
+	setAttr ".pv" -type "double2" 0.50000001490116119 0.62403464317321777 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr -s 78 ".uvst[0].uvsp[0:77]" -type "float2" 0.20980614 0.74074566
 		 0.20980394 0.70184731 0.20980185 0.66294914 0.20979974 0.62405038 0.20979756 0.58515209
@@ -20930,7 +20930,7 @@ createNode mesh -n "facility_pillar_03_geoShape" -p "facility_pillar_03_geo";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
-	setAttr ".pv" -type "double2" 0.5 0.62403465259240953 ;
+	setAttr ".pv" -type "double2" 0.49999998509883881 0.62403464317321777 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr -s 78 ".uvst[0].uvsp[0:77]" -type "float2" 0.20980611 0.74074566
 		 0.20980397 0.70184714 0.20980182 0.66294885 0.20979968 0.62405026 0.20979759 0.58515191
@@ -21129,7 +21129,7 @@ createNode mesh -n "facility_wall_geoShape" -p "facility_wall_geo";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
-	setAttr ".pv" -type "double2" 0.49383538961410522 0.57225435972213745 ;
+	setAttr ".pv" -type "double2" 0.50233912467956543 -0.23360693454742432 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr -s 3820 ".uvst[0].uvsp";
 	setAttr ".uvst[0].uvsp[0:249]" -type "float2" -2.55717373 0.92420757 1.89114845
@@ -28646,8 +28646,8 @@ createNode gameFbxExporter -n "gameExporterPreset1";
 	setAttr ".ebm" yes;
 	setAttr ".inc" yes;
 	setAttr ".fv" -type "string" "FBX201800";
-	setAttr ".exp" -type "string" "F:/Cavalry/Maya Project Files/Env/Exports/Facility";
-	setAttr ".exf" -type "string" "sm_facility";
+	setAttr ".exp" -type "string" "I:/Cavalry/Maya Project Files//Env/Exports/Facility";
+	setAttr ".exf" -type "string" "FacilityPlatform_05_SM_Low";
 createNode gameFbxExporter -n "gameExporterPreset2";
 	rename -uid "D879B6DD-4E14-E7F8-F340-46B6F105ABB3";
 	setAttr ".pn" -type "string" "Anim Default";
@@ -28778,48 +28778,6 @@ createNode file -n "file3";
 	setAttr ".cs" -type "string" "sRGB";
 createNode place2dTexture -n "place2dTexture3";
 	rename -uid "7708FA93-471A-F812-C658-0792ACBB0B43";
-createNode nodeGraphEditorInfo -n "hyperShadePrimaryNodeEditorSavedTabsInfo";
-	rename -uid "03D1BB4D-4730-C9D1-F5B3-71B7E65176C1";
-	setAttr ".tgi[0].tn" -type "string" "Untitled_1";
-	setAttr ".tgi[0].vl" -type "double2" -363.09522366713026 -338.69046273212638 ;
-	setAttr ".tgi[0].vh" -type "double2" -151.19047018270669 351.78570030700655 ;
-	setAttr -s 12 ".tgi[0].ni";
-	setAttr ".tgi[0].ni[0].x" -504.28570556640625;
-	setAttr ".tgi[0].ni[0].y" 148.57142639160156;
-	setAttr ".tgi[0].ni[0].nvs" 1923;
-	setAttr ".tgi[0].ni[1].x" -811.4285888671875;
-	setAttr ".tgi[0].ni[1].y" 125.71428680419922;
-	setAttr ".tgi[0].ni[1].nvs" 1923;
-	setAttr ".tgi[0].ni[2].x" 110;
-	setAttr ".tgi[0].ni[2].y" 125.71428680419922;
-	setAttr ".tgi[0].ni[2].nvs" 1923;
-	setAttr ".tgi[0].ni[3].x" -197.14285278320312;
-	setAttr ".tgi[0].ni[3].y" 148.57142639160156;
-	setAttr ".tgi[0].ni[3].nvs" 1923;
-	setAttr ".tgi[0].ni[4].x" -504.28570556640625;
-	setAttr ".tgi[0].ni[4].y" 148.57142639160156;
-	setAttr ".tgi[0].ni[4].nvs" 1923;
-	setAttr ".tgi[0].ni[5].x" -811.4285888671875;
-	setAttr ".tgi[0].ni[5].y" 125.71428680419922;
-	setAttr ".tgi[0].ni[5].nvs" 1923;
-	setAttr ".tgi[0].ni[6].x" -197.14285278320312;
-	setAttr ".tgi[0].ni[6].y" 148.57142639160156;
-	setAttr ".tgi[0].ni[6].nvs" 1923;
-	setAttr ".tgi[0].ni[7].x" -504.28570556640625;
-	setAttr ".tgi[0].ni[7].y" 148.57142639160156;
-	setAttr ".tgi[0].ni[7].nvs" 1923;
-	setAttr ".tgi[0].ni[8].x" -811.4285888671875;
-	setAttr ".tgi[0].ni[8].y" 125.71428680419922;
-	setAttr ".tgi[0].ni[8].nvs" 1923;
-	setAttr ".tgi[0].ni[9].x" 110;
-	setAttr ".tgi[0].ni[9].y" 125.71428680419922;
-	setAttr ".tgi[0].ni[9].nvs" 1923;
-	setAttr ".tgi[0].ni[10].x" -197.14285278320312;
-	setAttr ".tgi[0].ni[10].y" 148.57142639160156;
-	setAttr ".tgi[0].ni[10].nvs" 1923;
-	setAttr ".tgi[0].ni[11].x" 110;
-	setAttr ".tgi[0].ni[11].y" 125.71428680419922;
-	setAttr ".tgi[0].ni[11].nvs" 1923;
 createNode lambert -n "Grate_Mat";
 	rename -uid "8486010A-42A4-6884-7875-3DA5DA4713D8";
 createNode shadingEngine -n "lambert5SG";
@@ -28876,6 +28834,48 @@ createNode groupId -n "groupId151";
 createNode groupId -n "groupId152";
 	rename -uid "8DA84F8F-459A-F365-2D17-83985B3BB082";
 	setAttr ".ihi" 0;
+createNode nodeGraphEditorInfo -n "hyperShadePrimaryNodeEditorSavedTabsInfo";
+	rename -uid "E54B135F-41E1-C82E-041B-5BA79777CB24";
+	setAttr ".tgi[0].tn" -type "string" "Untitled_1";
+	setAttr ".tgi[0].vl" -type "double2" -362.49998559554484 -339.88093887529732 ;
+	setAttr ".tgi[0].vh" -type "double2" -150.59523211112128 350.59522416383561 ;
+	setAttr -s 12 ".tgi[0].ni";
+	setAttr ".tgi[0].ni[0].x" -811.4285888671875;
+	setAttr ".tgi[0].ni[0].y" 125.71428680419922;
+	setAttr ".tgi[0].ni[0].nvs" 1923;
+	setAttr ".tgi[0].ni[1].x" -504.28570556640625;
+	setAttr ".tgi[0].ni[1].y" 148.57142639160156;
+	setAttr ".tgi[0].ni[1].nvs" 1923;
+	setAttr ".tgi[0].ni[2].x" -197.14285278320312;
+	setAttr ".tgi[0].ni[2].y" 148.57142639160156;
+	setAttr ".tgi[0].ni[2].nvs" 1923;
+	setAttr ".tgi[0].ni[3].x" 110;
+	setAttr ".tgi[0].ni[3].y" 125.71428680419922;
+	setAttr ".tgi[0].ni[3].nvs" 1923;
+	setAttr ".tgi[0].ni[4].x" -811.4285888671875;
+	setAttr ".tgi[0].ni[4].y" 125.71428680419922;
+	setAttr ".tgi[0].ni[4].nvs" 1923;
+	setAttr ".tgi[0].ni[5].x" -811.4285888671875;
+	setAttr ".tgi[0].ni[5].y" 125.71428680419922;
+	setAttr ".tgi[0].ni[5].nvs" 1923;
+	setAttr ".tgi[0].ni[6].x" -504.28570556640625;
+	setAttr ".tgi[0].ni[6].y" 148.57142639160156;
+	setAttr ".tgi[0].ni[6].nvs" 1923;
+	setAttr ".tgi[0].ni[7].x" 110;
+	setAttr ".tgi[0].ni[7].y" 125.71428680419922;
+	setAttr ".tgi[0].ni[7].nvs" 1923;
+	setAttr ".tgi[0].ni[8].x" 110;
+	setAttr ".tgi[0].ni[8].y" 125.71428680419922;
+	setAttr ".tgi[0].ni[8].nvs" 1923;
+	setAttr ".tgi[0].ni[9].x" -197.14285278320312;
+	setAttr ".tgi[0].ni[9].y" 148.57142639160156;
+	setAttr ".tgi[0].ni[9].nvs" 1923;
+	setAttr ".tgi[0].ni[10].x" -504.28570556640625;
+	setAttr ".tgi[0].ni[10].y" 148.57142639160156;
+	setAttr ".tgi[0].ni[10].nvs" 1923;
+	setAttr ".tgi[0].ni[11].x" -197.14285278320312;
+	setAttr ".tgi[0].ni[11].y" 148.57142639160156;
+	setAttr ".tgi[0].ni[11].nvs" 1923;
 select -ne :time1;
 	setAttr ".o" 0;
 select -ne :hardwareRenderingGlobals;
@@ -29122,34 +29122,34 @@ connectAttr "place2dTexture3.vt3" "file3.vt3";
 connectAttr "place2dTexture3.vc1" "file3.vc1";
 connectAttr "place2dTexture3.o" "file3.uv";
 connectAttr "place2dTexture3.ofs" "file3.fs";
-connectAttr "file3.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[0].dn"
-		;
-connectAttr "place2dTexture3.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[1].dn"
-		;
-connectAttr "lambert2SG.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[2].dn"
-		;
-connectAttr "ConcreteWall_TS.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[3].dn"
-		;
-connectAttr "file1.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[4].dn"
-		;
-connectAttr "place2dTexture1.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[5].dn"
-		;
-connectAttr "Metal_TS.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[6].dn"
-		;
-connectAttr "file2.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[7].dn"
-		;
-connectAttr "place2dTexture2.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[8].dn"
-		;
-connectAttr "lambert4SG.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[9].dn"
-		;
-connectAttr "ConcreteFloor_TS.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[10].dn"
-		;
-connectAttr "lambert3SG.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[11].dn"
-		;
 connectAttr "Grate_Mat.oc" "lambert5SG.ss";
 connectAttr "facility_walkway_mesh_geoShape.iog" "lambert5SG.dsm" -na;
 connectAttr "lambert5SG.msg" "materialInfo13.sg";
 connectAttr "Grate_Mat.msg" "materialInfo13.m";
+connectAttr "place2dTexture3.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[0].dn"
+		;
+connectAttr "file1.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[1].dn"
+		;
+connectAttr "ConcreteFloor_TS.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[2].dn"
+		;
+connectAttr "lambert4SG.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[3].dn"
+		;
+connectAttr "place2dTexture1.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[4].dn"
+		;
+connectAttr "place2dTexture2.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[5].dn"
+		;
+connectAttr "file3.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[6].dn"
+		;
+connectAttr "lambert3SG.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[7].dn"
+		;
+connectAttr "lambert2SG.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[8].dn"
+		;
+connectAttr "Metal_TS.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[9].dn"
+		;
+connectAttr "file2.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[10].dn"
+		;
+connectAttr "ConcreteWall_TS.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[11].dn"
+		;
 connectAttr "phong1SG.pa" ":renderPartition.st" -na;
 connectAttr "lambert2SG.pa" ":renderPartition.st" -na;
 connectAttr "lambert3SG.pa" ":renderPartition.st" -na;
