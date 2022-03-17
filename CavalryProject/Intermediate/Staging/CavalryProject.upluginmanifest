@@ -19,58 +19,69 @@
 			}
 		},
 		{
-			"File": "../../../CavalryProject/Plugins/KatDataPlugin4BP/KatDataPlugin4BP.uplugin",
+			"File": "../../../Engine/Plugins/Marketplace/Substance/Substance.uplugin",
 			"Descriptor": 
 			{
 				"FileVersion": 3,
-				"Version": 3,
-				"VersionName": "3.0",
-				"FriendlyName": "KatDataPlugin",
-				"Description": "Get Kat Data",
-				"Category": "KatWalk",
-				"CreatedBy": "",
-				"CreatedByURL": "",
-				"DocsURL": "",
-				"MarketplaceURL": "",
+				"Version": 70,
+				"VersionName": "4.26.0.21",
+				"FriendlyName": "Substance in UE4",
+				"Description": "Adds support for Substance (sbsar) textures",
+				"Category": "Editor",
+				"CreatedBy": "Substance by Adobe",
+				"CreatedByURL": "https://www.substance3d.com/",
+				"DocsURL": "https://docs.substance3d.com/display/integrations/Unreal+Engine",
+				"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/content/2f6439c2f9584f49809d9b13b16c2ba4",
 				"SupportURL": "",
-				"CanContainContent": true,
-				"Modules": [
-					{
-						"Name": "KatDataPlugin4BP",
-						"Type": "Runtime",
-						"LoadingPhase": "PreLoadingScreen"
-					}
-				]
-			}
-		},
-		{
-			"File": "../../../CavalryProject/Plugins/FMODStudio/FMODStudio.uplugin",
-			"Descriptor": 
-			{
-				"FileVersion": 3,
-				"Version": 20205,
-				"VersionName": "2.02.05",
-				"FriendlyName": "FMOD Studio Integration",
-				"Description": "FMOD Studio Integration.",
-				"Category": "Audio",
-				"CreatedBy": "Firelight Technologies",
-				"CreatedByURL": "http://fmod.com",
-				"DocsURL": "",
-				"MarketplaceURL": "",
-				"SupportURL": "",
-				"EnabledByDefault": true,
+				"EngineVersion": "4.26.0",
 				"CanContainContent": true,
 				"Installed": true,
 				"Modules": [
 					{
-						"Name": "FMODStudio",
+						"Name": "SubstanceCore",
 						"Type": "Runtime",
-						"LoadingPhase": "PreDefault"
+						"LoadingPhase": "PreDefault",
+						"WhitelistPlatforms": [
+							"Win64",
+							"Win32",
+							"Mac",
+							"Linux",
+							"PS4",
+							"XboxOne"
+						]
 					},
 					{
-						"Name": "FMODStudioEditor",
+						"Name": "SubstanceEditor",
 						"Type": "Editor",
-						"LoadingPhase": "Default"
+						"LoadingPhase": "PostDefault",
+						"WhitelistPlatforms": [
+							"Win64",
+							"Win32",
+							"Mac",
+							"Linux"
+						]
+					},
+					{
+						"Name": "SubstanceLink",
+						"Type": "Editor",
+						"LoadingPhase": "PostDefault",
+						"WhitelistPlatforms": [
+							"Win64",
+							"Win32",
+							"Mac",
+							"Linux"
+						]
+					},
+					{
+						"Name": "SubstanceLiveLink",
+						"Type": "Editor",
+						"LoadingPhase": "PostDefault",
+						"WhitelistPlatforms": [
+							"Win64",
+							"Win32",
+							"Mac",
+							"Linux"
+						]
 					}
 				]
 			}
